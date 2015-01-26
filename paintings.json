@@ -1,0 +1,38 @@
+[
+    {	"title":"Arc of the Divers",
+    	"include":true,
+    	"category":"current",
+    	"full-filename":"Arc-of-the-Divers-by-George-Middleton.jpg",
+    	"thumb-filename":"Arc-of-the-Divers-by-George-Middleton-Thumb.jpg",
+    	"medium":"acrylic on cradled hardwood panel",
+    	"size":"27\" x 48.5\" x 2\"",
+    	"date":"2014",
+    	"price":"$4000"
+    }, 
+    {
+    	"title":"Blue Angel",
+    	"include":true,
+    	"category":"current",
+    	"full-filename":"Blue-Angel-by-George-Middleton.jpg",
+    	"thumb-filename":"Blue-Angel-by-George-Middleton-Thumb.jpg",
+    	"medium":"inkjet reproduction of original w/c",
+    	"size":"12\" x 12\"",
+    	"date":"2015",
+    	"edition": "edition of 100",
+    	"price":"$40",
+    	"buy-now-code-filename":"blue-angel.txt"
+    },
+    {
+    	"title":"Blue Angel",
+    	"include":true,
+    	"category":"current",
+    	"full-filename":"Blue-Angel-by-George-Middleton.jpg",
+    	"thumb-filename":"Blue-Angel-by-George-Middleton-Thumb.jpg",
+    	"medium":"inkjet reproduction of original w/c",
+    	"size":"12\" x 12\"",
+    	"date":"2015",
+    	"edition": "edition of 100",
+    	"price":"$40",
+    	"buy-now-code-filename":"blue-angel.txt"
+    }
+]

@@ -6,7 +6,7 @@
 	<style>
 		#container {
 			background-color: pink;
-			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 			height: 685px;	/* MCA height */
 			margin: auto;	/* center MCA horizontally */
 			position: relative;
@@ -113,21 +113,16 @@
 			<a href="">next&gt;</a>
 		</div>
 		<div id="img-parent">
-			<img src="images/current-full/Arc-of-the-Divers-by-George-Middleton.jpg" alt="Arc of the Divers" />
+			<img src="images/full/Arc-of-the-Divers-by-George-Middleton.jpg" alt="Arc of the Divers" />
 			<div id="caption">
 				Arc of the Divers   acrylic on cradled hardwood panel   27" x 48.5" x 2"   2014   $4000
 			</div>
 		</div>
 		<div id="thumb-nav">
-			<img src="images/current-thumb/Arc-of-the-Divers-by-George-Middleton-Thumb.jpg" />
-			<img src="images/current-thumb/Divided-Sky-by-George-Middleton-Thumb.jpg" /><br />
-			<img src="images/current-thumb/Fire-Dancer-by-George-MIddleton-Thumb.jpg" />
-			<img src="images/current-thumb/Nocturne-by-George-Middleton-Thumb.jpg" /><br />
-			<img src="images/current-thumb/Standing-Wave-by-George-Middleton-Thumb.jpg" />
-			<img src="images/current-thumb/Triple-Play-by-George-Middleton-Thumb.jpg" />
+			<?php include 'thumb-nav.php';?>
 		</div>
 		<div id="footer">
-			<?php include 'test.php';?>
+			<?php include 'footer.php';?>
 		</div>
 	</div>
 </body>
