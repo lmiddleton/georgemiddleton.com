@@ -10,7 +10,7 @@
     }
 
     // echos html for the specified page's thumbnail navigation
-    function render_thumbnav($category)
+    function render_thumbnav($image, $category)
     {
       	// get the paintings
 		$paintings = get_paintings();
@@ -25,8 +25,14 @@
 		for($i = 0; $i < $len; ++$i) {
 			// check that painting belongs in current page
 			if($paintings[$i]["category"] == $category) {
+				// if the painting is the current fullsize, give it a border
+				$class = "";
+				if($paintings[$i]["title"] == $image) {
+					$class = "class='active-thumb'";
+				}
+
 				// render the thumbnail image
-				echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+				echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
 				$count++;
 
 				// if count is evenly divisible by 0, we need a break tag
@@ -34,44 +40,6 @@
 					echo "<br />";
 				}
 			}	
-		}
-    }
-
-    // deprecated
-    // echos html for the specified page's default fullsize image and caption
-    function render_first_img($category)
-    {
-    	// get the paintings
-		$paintings = get_paintings();
-
-		// count number of painting arrays
-		$len = count($paintings);
-
-		// iterate over painting arrays to find first in category
-		for($i = 0; $i < $len; ++$i) {
-			// check that painting belongs in current page
-			if($paintings[$i]["category"] == $category) {
-				// render the fullsize image
-				echo "<img src=\"images/full/" . $paintings[$i]["full-filename"] . "\" />";
-				// build the caption
-				$caption = "<div class='caption'>";
-				// add the non-optional elements
-				$caption .= $paintings[$i]["title"] . " " . $paintings[$i]["medium"] . " " . $paintings[$i]["size"] . " " . $paintings[$i]["date"];
-				// check for optional elements
-				if (array_key_exists("edition", $paintings[$i])) {
-					// add edition if it exists
-					$caption .=  " " . $paintings[$i]["edition"];
-				}
-				if (array_key_exists("price", $paintings[$i])) {
-					// add price if it exists
-					$caption .=  " " . $paintings[$i]["price"];
-				}
-				// close the tag
-				$caption .= "</div>";
-				// render the caption
-				echo $caption;
-				return;
-			}
 		}
     }
 

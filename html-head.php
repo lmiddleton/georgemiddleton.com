@@ -92,4 +92,8 @@
 	a.active {
 		text-decoration: underline;
 	}
+
+	a.active-thumb img {
+		border: solid 2px red;
+	}
 </style>
