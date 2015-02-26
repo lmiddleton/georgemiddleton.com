@@ -1,5 +1,6 @@
 <?php
-
+	
+	// returns php array of paintings JSON object
     function get_paintings()
     {
     	// read in the contents of the json file as a string - should do this once in the beginning in some controller file?
@@ -8,6 +9,7 @@
 		return json_decode($json, true);
     }
 
+    // echos html for the specified page's thumbnail navigation
     function render_thumbnav($category)
     {
       	// get the paintings
@@ -24,7 +26,7 @@
 			// check that painting belongs in current page
 			if($paintings[$i]["category"] == $category) {
 				// render the thumbnail image
-				echo "<img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" />";
+				echo "<a href=''><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
 				$count++;
 
 				// if count is evenly divisible by 0, we need a break tag
@@ -35,6 +37,7 @@
 		}
     }
 
+    // echos html for the specified page's default fullsize image and caption
     function render_first_img($category)
     {
     	// get the paintings
@@ -69,5 +72,11 @@
 				return;
 			}
 		}
+    }
+
+    // renders the main navigation with the active page link underlined
+    function render_main_nav($activePage)
+    {
+    	// 
     }
 ?>

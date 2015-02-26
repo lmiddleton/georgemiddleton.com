@@ -1,14 +1,15 @@
 <h1>GEORGE MIDDLETON</h1>
 <div id="nav">
-	<a href="current-work.php">Current Work</a>
+	<!-- <?php render_main_nav($this->activePage);?> -->
+	<a href="current-work.php" class="">Now</a>
 	|
-	<a href="past-work.php">Past Work</a>
+	<a href="past-work.php">Earlier</a>
 	|
 	<a href="prints.php">Prints</a>
 	|
 	<a href="about.php">About</a>
 	|
-	<a href="contact.php">Contact</a>
+	<a href="contact.php" class="active">Contact</a>
 	|
 	<a href="newsletter.php">Newsletter</a>
 </div>

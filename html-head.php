@@ -1,6 +1,17 @@
 <title>George Middleton - paintings inspired by visions of nature and spirit</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <style>
+	h1 {
+		color: #555555;
+		display: inline;
+		font-size: 2em;
+		margin-right: 2em;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
 	#container {
 		background-color: pink;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
@@ -8,13 +19,6 @@
 		margin: auto;	/* center MCA horizontally */
 		position: relative;
 		width: 1028px;	/* MCA width */
-	}
-
-	h1 {
-		color: #555555;
-		display: inline;
-		font-size: 2em;
-		margin-right: 2em;
 	}
 
 	#header {
@@ -83,5 +87,9 @@
 	a:active {
 		color: #828992;
 		text-decoration: none;
+	}
+
+	a.active {
+		text-decoration: underline;
 	}
 </style>
