@@ -26,9 +26,13 @@
 			// check that painting belongs in current page
 			if($paintings[$i]["category"] == $category) {
 				// if the painting is the current fullsize, give it a border
-				$class = "";
+				$class = "class='thumb";
 				if($paintings[$i]["title"] == $image) {
-					$class = "class='active-thumb'";
+					$class .= " active-thumb'";
+				}
+				else {
+					// close the attribute
+					$class .="'";
 				}
 
 				// render the thumbnail image

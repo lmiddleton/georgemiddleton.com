@@ -93,6 +93,10 @@
 		text-decoration: underline;
 	}
 
+	a.thumb img {
+		border: solid 2px white;
+	}
+
 	a.active-thumb img {
 		border: solid 2px red;
 	}
