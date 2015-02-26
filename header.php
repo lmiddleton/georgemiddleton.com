@@ -3,7 +3,7 @@
 	<!-- <?php render_main_nav($this->activePage);?> -->
 	<a href="current.php" class="">Now</a>
 	|
-	<a href="past-work.php">Earlier</a>
+	<a href="past.php">Earlier</a>
 	|
 	<a href="prints.php">Prints</a>
 	|
