@@ -1,7 +1,7 @@
 <h1>GEORGE MIDDLETON</h1>
 <div id="nav">
 	<!-- <?php render_main_nav($this->activePage);?> -->
-	<a href="current-work.php" class="">Now</a>
+	<a href="current.php" class="">Now</a>
 	|
 	<a href="past-work.php">Earlier</a>
 	|

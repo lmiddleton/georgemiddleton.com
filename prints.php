@@ -8,11 +8,19 @@ $tpl = new Savant3();
 $file = "templates/image-page-guts.tpl.php";
 
 // specify the image category
-$test = "prints";
+$category = "prints";
+
+// check for specific image
+$image = "";
+if($_GET) {
+	$image = $_GET["image"];
+	//echo $image;
+}
 
 // Assign values to the Savant instance.
 $tpl->file = $file;
-$tpl->category = $test;
+$tpl->category = $category;
+$tpl->image = $image;
 
 // Display a template using the assigned values.
 $tpl->display('templates/page.tpl.php');
