@@ -9,7 +9,7 @@
 		return json_decode($json, true);
     }
 
-    // echos html for the specified page's thumbnail navigation
+    // renders the current thumbnail navigation
     function render_thumbnav($image, $category)
     {
       	// get the paintings
@@ -58,6 +58,7 @@
 		}
     }
 
+    // renders the current full size image
     function render_full_img($image, $category)
     {
     	// get the paintings
@@ -89,6 +90,7 @@
 		}
     }
 
+    // echos html for full size images and captions
     function print_full($paintings, $i)
     {
     	// render the fullsize image
@@ -112,6 +114,7 @@
 		echo $caption;
     }
 
+    // echos html for thumbnail images
     function print_thumb($category, $paintings, $i, $class) {
     	echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
     }
