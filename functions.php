@@ -30,7 +30,7 @@
 					// give it a border
 					$class = "class='thumb active-thumb'";
 					// render the thumbnail image
-					echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+					print_thumb($category, $paintings, $i, $class);
 					$count++;
 				}
 				// else...
@@ -46,7 +46,7 @@
 					}
 
 					// render the thumbnail image
-					echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+					print_thumb($category, $paintings, $i, $class);
 					$count++;
 
 					// if count is evenly divisible by 0, we need a break tag
@@ -110,6 +110,10 @@
 		$caption .= "</div>";
 		// render the caption
 		echo $caption;
+    }
+
+    function print_thumb($category, $paintings, $i, $class) {
+    	echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
     }
 
     // renders the main navigation with the active page link underlined
