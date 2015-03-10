@@ -25,23 +25,34 @@
 		for($i = 0; $i < $len; ++$i) {
 			// check that painting belongs in current page
 			if($paintings[$i]["category"] == $category) {
-				// if the painting is the current fullsize, give it a border
-				$class = "class='thumb";
-				if($paintings[$i]["title"] == $image) {
-					$class .= " active-thumb'";
+				// if no image specified and we haven't printed the first thumb yet...
+				if($image == "" && $count == 0) {
+					// give it a border
+					$class = "class='thumb active-thumb'";
+					// render the thumbnail image
+					echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+					$count++;
 				}
+				// else...
 				else {
-					// close the attribute
-					$class .="'";
-				}
+					// if the painting is the current fullsize, give it a border
+					$class = "class='thumb";
+					if($paintings[$i]["title"] == $image) {
+						$class .= " active-thumb'";
+					}
+					else {
+						// close the attribute
+						$class .="'";
+					}
 
-				// render the thumbnail image
-				echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
-				$count++;
+					// render the thumbnail image
+					echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+					$count++;
 
-				// if count is evenly divisible by 0, we need a break tag
-				if($count % 2 == 0) {
-					echo "<br />";
+					// if count is evenly divisible by 0, we need a break tag
+					if($count % 2 == 0) {
+						echo "<br />";
+					}
 				}
 			}	
 		}
