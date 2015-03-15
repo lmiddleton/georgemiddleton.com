@@ -24,6 +24,7 @@
 	#header {
 		background-color: yellow;
 		text-align: center;
+		width: 900px; /* max full size */
 	}
 
 	#nav {
@@ -40,11 +41,14 @@
 	#ss-controls {
 		background-color: green;
 		text-align: center;
+		width: 900px; /* max full size */
 	}
 
 	#img-parent {
 		background-color: yellow;
 		float: left;
+		text-align: center;
+		width: 900px; /* max full size */
 	}
 
 	#thumb-nav {
@@ -59,6 +63,10 @@
 		text-align: center;
 	}
 
+	.text-container {
+		width: 900px; /* max full size */
+	}
+
 	#footer {
 		background-color: orange;
 		bottom: 0;
@@ -66,7 +74,7 @@
 		clear: both;
 		position: absolute;
 		text-align: center;
-		width: 100%;
+		width: 900px; /* max full size */
 	}
 
 	a:link {
