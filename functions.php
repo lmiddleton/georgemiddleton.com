@@ -97,8 +97,8 @@
     	$src = "\"images/full/" . $paintings[$i]["full-filename"] . "\"";
     	// build the alt attribute
     	$alt = "\"" . $paintings[$i]["title"] . "\"";
-    	// render the fullsize image tag
-		echo "<img src=" . $src . "alt=" . $alt . " />";
+    	// render the fullsize image
+		echo "<a href=\"" . "test\"" . "><img src=" . $src . "alt=" . $alt . " /></a>";
 		// build the caption
 		$caption = "<div class='caption'>";
 		// add the non-optional elements
@@ -125,7 +125,8 @@
     	$src = "\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\"";
     	// build the alt attribute
     	$alt = "\"" . $paintings[$i]["title"] . "\"";
-    	echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=" . $src . "alt=" . $alt . " /></a>";
+    	// render the thumbnail image
+    	echo "<a href=\"" . $category . ".php?image=" . $paintings[$i]["title"] . "\"" . $class . "><img src=" . $src . "alt=" . $alt . " /></a>";
     }
 
     // renders the main navigation with the active page link underlined
