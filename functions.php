@@ -93,8 +93,12 @@
     // echos html for full size images and captions
     function print_full($paintings, $i)
     {
-    	// render the fullsize image
-		echo "<img src=\"images/full/" . $paintings[$i]["full-filename"] . "\" />";
+    	// build the src attribute
+    	$src = "\"images/full/" . $paintings[$i]["full-filename"] . "\"";
+    	// build the alt attribute
+    	$alt = "\"" . $paintings[$i]["title"] . "\"";
+    	// render the fullsize image tag
+		echo "<img src=" . $src . "alt=" . $alt . " />";
 		// build the caption
 		$caption = "<div class='caption'>";
 		// add the non-optional elements
