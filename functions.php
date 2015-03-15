@@ -119,8 +119,13 @@
     }
 
     // echos html for thumbnail images
-    function print_thumb($category, $paintings, $i, $class) {
-    	echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\" /></a>";
+    function print_thumb($category, $paintings, $i, $class)
+    {
+    	// build the src attribute
+    	$src = "\"images/thumb/" . $paintings[$i]["thumb-filename"] . "\"";
+    	// build the alt attribute
+    	$alt = "\"" . $paintings[$i]["title"] . "\"";
+    	echo "<a href='" . $category . ".php?image=" . $paintings[$i]["title"] . "'" . $class . "><img src=" . $src . "alt=" . $alt . " /></a>";
     }
 
     // renders the main navigation with the active page link underlined
