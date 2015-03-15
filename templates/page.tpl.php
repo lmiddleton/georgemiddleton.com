@@ -7,21 +7,14 @@
 </head>
 <body>
 	<div id="container">
-		<div style="float: left; width: 90%;">
-			<div id="header">
-				<?php include 'header.php';?>
-			</div>
-			<div>
-				<?php include $this->file;?>
-			</div>
-			<div id="footer">
-				<?php include 'footer.php';?>
-			</div>
+		<div id="header">
+			<?php include 'header.php';?>
 		</div>
-		<div style="float: right;">
-			<div id="thumb-nav">
-				<?php render_thumbnav($this->image, $this->category);?>
-			</div>
+		<div>
+			<?php include $this->file;?>
+		</div>
+		<div id="footer">
+			<?php include 'footer.php';?>
 		</div>
 	</div>
 </body>

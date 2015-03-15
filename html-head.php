@@ -13,7 +13,7 @@
 	}
 
 	#container {
-		/*background-color: pink;*/
+		background-color: pink;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 		height: 685px;	/* MCA height */
 		margin: auto;	/* center MCA horizontally */
@@ -22,8 +22,8 @@
 	}
 
 	#header {
+		background-color: yellow;
 		text-align: center;
-		height: 40px;
 	}
 
 	#nav {
@@ -38,26 +38,29 @@
 	}
 
 	#ss-controls {
+		background-color: green;
 		text-align: center;
-		height: 20px;
 	}
 
 	#img-parent {
-		text-align: center;
+		background-color: yellow;
+		float: left;
 	}
 
 	#thumb-nav {
+		background-color: yellow;
 		float: right;
 		vertical-align: top;
-		margin-top: 60px; /* #header height + #ss-controls height */
 	}
 
 	.caption {
+		background-color: white;
 		font-size: 0.8em;
 		text-align: center;
 	}
 
 	#footer {
+		background-color: orange;
 		bottom: 0;
 		font-size: 0.7em;
 		clear: both;

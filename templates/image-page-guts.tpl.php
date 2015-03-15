@@ -6,3 +6,6 @@
 <div id="img-parent">
 	<?php render_full_img($this->image, $this->category);?>
 </div>
+<div id="thumb-nav">
+	<?php render_thumbnav($this->image, $this->category);?>
+</div>
