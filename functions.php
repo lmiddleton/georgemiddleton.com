@@ -49,8 +49,6 @@
 
     // finds the "next" image after the specified image in the category
     function get_next_image($current_image, $category) {
-    	echo $current_image;
-
     	// we will store the next image in this var
     	$next_image = "";
 
