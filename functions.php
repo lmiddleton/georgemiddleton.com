@@ -16,7 +16,7 @@
     }
 
     // finds the returns the image that should be displayed
-    function get_current_image($category) {
+    function get_current_image($paintings, $category) {
     	// we will store the image to be displayed in this var
     	$image = "";
 
@@ -29,7 +29,7 @@
 		// otherwise, loop through the images to find the first in the category
 		else {
 			// get the paintings
-			$paintings = get_paintings();
+			//$paintings = get_paintings();
 
 			// count number of painting arrays
 			$len = count($paintings);
@@ -48,12 +48,12 @@
     }
 
     // finds the "next" image after the specified image in the category
-    function get_next_image($current_image, $category) {
+    function get_next_image($paintings, $current_image, $category) {
     	// we will store the next image in this var
     	$next_image = "";
 
     	// get the paintings
-		$paintings = get_paintings();
+		//$paintings = get_paintings();
 
 		// count number of painting arrays
 		$len = count($paintings);
@@ -99,12 +99,12 @@
     }
 
     // builds and returns the html markup for the thumbnav
-    function build_thumbnav($image, $category) {
+    function build_thumbnav($paintings, $image, $category) {
     	// we will build the thumbnav markup in this variable
     	$thumbnav = "";
 
     	// get the paintings
-		$paintings = get_paintings();
+		//$paintings = get_paintings();
 
 		// count number of painting arrays
 		$len = count($paintings);

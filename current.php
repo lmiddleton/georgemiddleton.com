@@ -12,14 +12,17 @@ $file = "templates/image-page-guts.tpl.php";
 // specify the image category
 $category = "current";
 
+// get and store the paintings
+$paintings = get_paintings();
+
 // find the current image that should be displayed
-$image = get_current_image($category);
+$image = get_current_image($paintings, $category);
 
 // find the next image in the category
-$next_image = get_next_image($image, $category);
+$next_image = get_next_image($paintings, $image, $category);
 
 // build the thumb nav
-$thumbnav = build_thumbnav($image, $category);
+$thumbnav = build_thumbnav($paintings, $image, $category);
 
 // Assign values to the Savant instance.
 $tpl->file = $file;
