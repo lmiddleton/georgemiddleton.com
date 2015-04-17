@@ -274,8 +274,18 @@
     	$src = "\"images/full/" . $paintings[$i]["full-filename"] . "\"";
     	// build the alt attribute
     	$alt = "\"" . $paintings[$i]["title"] . "\"";
-    	// build the href attribute
-    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+    	
+    	if($next_image != "") {
+	    	// build the href attribute
+	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+    	}
+    	// we are at the last image
+    	else {
+    		// build href that will go back to beginning of category
+    		$href = "";
+    		$href .= $category . ".php?image=";
+    	}
+    	
     	// render the fullsize image
 		$full .= "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . " /></a>";
 		// build the caption
@@ -302,16 +312,31 @@
     // echos html for href attribute of next image
     function print_next_href($paintings, $category, $next_image)
     {
-    	// build the href attribute
-    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+    	if($next_image != "") {
+	    	// build the href attribute
+	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+    	}
+    	// we are at the last image
+    	else {
+    		// build href that will go back to beginning of category
+    		$href = "";
+    		$href .= $category . ".php?image=";
+    	}
     	// render it
     	echo "href=" . $href . "";
     }
 
     function print_prev_href($paintings, $category, $prev_image)
     {
-    	// build the href attribute
-    	$href =  "\"" . $category . ".php?image=" . $paintings[$prev_image]["title"] . "\"";
+    	if($prev_image !=  "") {
+    		// build the href attribute
+    		$href =  "\"" . $category . ".php?image=" . $paintings[$prev_image]["title"] . "\"";
+    	}
+    	// we are at the first image
+    	// need to figure out how to wrap around
+    	else {
+    		$href = "";
+    	}
     	// render it
     	echo "href=" . $href . "";
     }
