@@ -23,6 +23,7 @@
 
 		// Assign values to the Savant instance.
 		$tpl->file = $file;
+		$tpl->paintings = $paintings;
 		$tpl->category = $category;
 		$tpl->image = $image;
 		$tpl->next_image = $next_image;
@@ -243,10 +244,8 @@
     }
 
     // echos html for href attribute of next image
-    function print_next_href($category, $next_image)
+    function print_next_href($paintings, $category, $next_image)
     {
-    	// get the paintings - should just get this in current.php, etc. and pass it through all functions
-		$paintings = get_paintings();
     	// build the href attribute
     	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
     	// render it
