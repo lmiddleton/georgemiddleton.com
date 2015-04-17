@@ -28,9 +28,6 @@
 
 		// otherwise, loop through the images to find the first in the category
 		else {
-			// get the paintings
-			//$paintings = get_paintings();
-
 			// count number of painting arrays
 			$len = count($paintings);
 
@@ -51,9 +48,6 @@
     function get_next_image($paintings, $current_image, $category) {
     	// we will store the next image in this var
     	$next_image = "";
-
-    	// get the paintings
-		//$paintings = get_paintings();
 
 		// count number of painting arrays
 		$len = count($paintings);
@@ -103,9 +97,6 @@
     	// we will build the thumbnav markup in this variable
     	$thumbnav = "";
 
-    	// get the paintings
-		//$paintings = get_paintings();
-
 		// count number of painting arrays
 		$len = count($paintings);
 
@@ -151,62 +142,11 @@
 		return $thumbnav;
     }
 
-    // renders the current thumbnail navigation
-    /*
-    function render_thumbnav($image, $category)
+    // builds and returns the html markup for the current full size image
+    function build_full_img($paintings, $image, $next_image, $category)
     {
-      	// get the paintings
-		$paintings = get_paintings();
-
-		// count number of painting arrays
-		$len = count($paintings);
-
-		// keep a count of how many thumbs printed
-		$count = 0;
-
-		// iterate over painting arrays
-		for($i = 0; $i < $len; ++$i) {
-			// check that painting belongs in current page
-			if($paintings[$i]["category"] == $category) {
-				// if no image specified and we haven't printed the first thumb yet...
-				if($image == "" && $count == 0) {
-					// give it a border
-					$class = "class='thumb active-thumb'";
-					// render the thumbnail image
-					print_thumb($category, $paintings, $i, $class);
-					$count++;
-				}
-				// else...
-				else {
-					// if the painting is the current fullsize, give it a border
-					$class = "class='thumb";
-					if($paintings[$i]["title"] == $image) {
-						$class .= " active-thumb'";
-					}
-					else {
-						// close the attribute
-						$class .="'";
-					}
-
-					// render the thumbnail image
-					print_thumb($category, $paintings, $i, $class);
-					$count++;
-
-					// if count is evenly divisible by 0, we need a break tag
-					if($count % 2 == 0) {
-						echo "<br />";
-					}
-				}
-			}	
-		}
-    }
-    */
-
-    // renders the current full size image
-    function render_full_img($image, $next_image, $category)
-    {
-    	// get the paintings
-		$paintings = get_paintings();
+    	// we will build the markup in this variable
+    	$full_image = "";
 
 		// count number of painting arrays
 		$len = count($paintings);
@@ -217,8 +157,8 @@
 			for($i = 0; $i < $len; ++$i) {
 				// check that painting belongs in current page
 				if($paintings[$i]["category"] == $category) {
-					print_full($paintings, $i, $next_image, $category);
-					return;
+					$full_image .= build_full($paintings, $i, $next_image, $category);
+					return $full_image;
 				}
 			}
 		}
@@ -227,16 +167,19 @@
 			// iterate over painting arrays to find and render the image with the specified title and category
 			for($i = 0; $i < $len; ++$i) {
 				if($paintings[$i]["category"] == $category && $paintings[$i]["title"] == $image) {
-					print_full($paintings, $i, $next_image, $category);
-					return;
+					$full_image .= build_full($paintings, $i, $next_image, $category);
+					return $full_image;
 				}
 			}
 		}
     }
 
-    // echos html for full size images and captions
-    function print_full($paintings, $i, $next_image, $category)
+    // builds and returns html for full size images and captions
+    function build_full($paintings, $i, $next_image, $category)
     {
+    	// we will build the markup in this variable
+    	$full = "";
+
     	// build the src attribute
     	$src = "\"images/full/" . $paintings[$i]["full-filename"] . "\"";
     	// build the alt attribute
@@ -244,7 +187,7 @@
     	// build the href attribute
     	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
     	// render the fullsize image
-		echo "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . " /></a>";
+		$full .= "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . " /></a>";
 		// build the caption
 		$caption = "<div class='caption'>";
 		// add the non-optional elements
@@ -261,7 +204,9 @@
 		// close the tag
 		$caption .= "</div>";
 		// render the caption
-		echo $caption;
+		$full .= $caption;
+
+		return $full;
     }
 
     // echos html for href attribute of next image

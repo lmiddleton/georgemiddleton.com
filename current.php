@@ -21,6 +21,9 @@ $image = get_current_image($paintings, $category);
 // find the next image in the category
 $next_image = get_next_image($paintings, $image, $category);
 
+// build the full image
+$full_image = build_full_img($paintings, $image, $next_image, $category);
+
 // build the thumb nav
 $thumbnav = build_thumbnav($paintings, $image, $category);
 
@@ -29,6 +32,7 @@ $tpl->file = $file;
 $tpl->category = $category;
 $tpl->image = $image;
 $tpl->next_image = $next_image;
+$tpl->full_image = $full_image;
 $tpl->thumbnav = $thumbnav;
 
 // Display a template using the assigned values.
