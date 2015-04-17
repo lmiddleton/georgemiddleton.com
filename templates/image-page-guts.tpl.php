@@ -1,5 +1,5 @@
 <div id="ss-controls">
-	<a href="">&lt;prev</a>
+	<a <?php print_prev_href($this->paintings, $this->category, $this->prev_image) ?>>&lt;prev</a>
 	<a href="">play slideshow</a>
 	<a <?php print_next_href($this->paintings, $this->category, $this->next_image) ?>>next&gt;</a>
 </div>
