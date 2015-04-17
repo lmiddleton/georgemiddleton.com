@@ -264,6 +264,17 @@
 		echo $caption;
     }
 
+    // echos html for href attribute of next image
+    function print_next_href($category, $next_image)
+    {
+    	// get the paintings - should just get this in current.php, etc. and pass it through all functions
+		$paintings = get_paintings();
+    	// build the href attribute
+    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+    	// render it
+    	echo "href=" . $href . "";
+    }
+
     // builds and returns the html markup for individual thumbnail images
     function build_thumb($category, $paintings, $i, $class)
     {
