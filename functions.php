@@ -37,16 +37,10 @@
 	// returns php array of paintings JSON object
     function get_paintings()
     {
-    	// read in the contents of the json file as a string - should do this once in the beginning in some controller file?
+    	// read in the contents of the json file as a string
 		$json = file_get_contents("paintings.json");
 		// parse the json string into php array and return
 		return json_decode($json, true);
-    }
-
-    // renders the slideshow navigation
-    function render_ss_controls()
-    {
-
     }
 
     // finds the returns the image that should be displayed
