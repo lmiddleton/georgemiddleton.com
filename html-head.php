@@ -1,11 +1,13 @@
 <title>George Middleton - paintings inspired by visions of nature and spirit</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
 <style>
 	h1 {
 		color: #555555;
 		display: inline;
-		font-size: 2em;
-		margin-right: 2em;
+		font-size: 1.1em;
+		margin-right: 0.5em;
 	}
 
 	strong {
@@ -13,7 +15,7 @@
 	}
 
 	#container {
-		background-color: pink;
+		/*background-color: pink;*/
 		font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 		height: 685px;	/* MCA height */
 		margin: auto;	/* center MCA horizontally */
@@ -22,7 +24,7 @@
 	}
 
 	#header {
-		background-color: yellow;
+		/*background-color: yellow;*/
 		text-align: center;
 		width: 900px; /* max full size */
 	}
@@ -33,32 +35,37 @@
 		font-size: .9em;
 	}
 
-	#nav a {
+	#nav a.text {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
 
+	#nav a.img {
+		margin-left: .2em;
+		margin-right: .2em;
+	}
+
 	#ss-controls {
-		background-color: green;
+		/*background-color: green;*/
 		text-align: center;
 		width: 900px; /* max full size */
 	}
 
 	#img-parent {
-		background-color: yellow;
+		/*background-color: yellow;*/
 		float: left;
 		text-align: center;
 		width: 900px; /* max full size */
 	}
 
 	#thumb-nav {
-		background-color: yellow;
+		/*background-color: yellow;*/
 		float: right;
 		vertical-align: top;
 	}
 
 	.caption {
-		background-color: white;
+		/*ackground-color: white;*/
 		font-size: 0.8em;
 		text-align: center;
 	}
@@ -68,7 +75,7 @@
 	}
 
 	#footer {
-		background-color: orange;
+		/*background-color: orange;*/
 		bottom: 0;
 		font-size: 0.7em;
 		clear: both;
