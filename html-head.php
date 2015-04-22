@@ -69,9 +69,13 @@
 	}
 
 	.caption {
-		/*ackground-color: white;*/
+		/*background-color: white;*/
 		font-size: 0.8em;
 		text-align: center;
+	}
+
+	.caption form {
+		display: inline;
 	}
 
 	span.title {

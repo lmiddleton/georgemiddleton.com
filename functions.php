@@ -303,6 +303,15 @@
 			// add price if it exists
 			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["price"];
 		}
+		if (array_key_exists("buy-now-code-filename", $paintings[$i])) {
+			// build file name
+			$filename = "buy-now-code/" . $paintings[$i]["buy-now-code-filename"];
+			// read in code from file
+			$code = file_get_contents($filename);
+			//echo $code;
+			// add it to the caption
+			$caption .= $code;
+		}
 		// close the tag
 		$caption .= "</div>";
 		// render the caption

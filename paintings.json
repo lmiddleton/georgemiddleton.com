@@ -204,7 +204,7 @@
         "date":"2012",
         "edition":"edition of 90",
         "price":"$50",
-        "buy-now-code-filename":"blue-angel.txt"
+        "buy-now-code-filename":"ocean-dancers-iv.txt"
     },
     {
         "title":"Manowar",
@@ -217,7 +217,7 @@
         "date":"2006",
         "edition":"edition of 50",
         "price":"$40",
-        "buy-now-code-filename":"blue-angel.txt"
+        "buy-now-code-filename":"manowar.txt"
     },
     {
         "title":"Redman",
@@ -230,7 +230,7 @@
         "date":"1997",
         "edition":"edition of 90",
         "price":"$40",
-        "buy-now-code-filename":"blue-angel.txt"
+        "buy-now-code-filename":"redman.txt"
     },
     {
         "title":"And They Came from the Sea",
@@ -243,6 +243,6 @@
         "date":"2011",
         "edition":"edition of 90",
         "price":"$35",
-        "buy-now-code-filename":"blue-angel.txt"
+        "buy-now-code-filename":"and-they-came-from-the-sea.txt"
     }
 ]
