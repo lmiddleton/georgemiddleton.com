@@ -58,6 +58,10 @@
 		width: 900px; /* max full size */
 	}
 
+	img.full {
+		border: solid 1px black;
+	}
+
 	#thumb-nav {
 		/*background-color: yellow;*/
 		float: right;
@@ -68,6 +72,10 @@
 		/*ackground-color: white;*/
 		font-size: 0.8em;
 		text-align: center;
+	}
+
+	span.title {
+		font-weight: bold;
 	}
 
 	.text-container {

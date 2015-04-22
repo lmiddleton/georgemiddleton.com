@@ -274,6 +274,8 @@
     	$src = "\"images/full/" . $paintings[$i]["full-filename"] . "\"";
     	// build the alt attribute
     	$alt = "\"" . $paintings[$i]["title"] . "\"";
+    	// build the class attribute
+    	$class = "\"full\"";
     	
     	if($next_image != "") {
 	    	// build the href attribute
@@ -285,21 +287,21 @@
     		$href = "";
     		$href .= $category . ".php?image=";
     	}
-    	
+
     	// render the fullsize image
-		$full .= "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . " /></a>";
+		$full .= "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . "class=" . $class . " /></a>";
 		// build the caption
 		$caption = "<div class='caption'>";
 		// add the non-optional elements
-		$caption .= $paintings[$i]["title"] . " " . $paintings[$i]["medium"] . " " . $paintings[$i]["size"] . " " . $paintings[$i]["date"];
+		$caption .= "<span class='title'>" . $paintings[$i]["title"] . "</span>" . "&nbsp&nbsp&nbsp" . $paintings[$i]["medium"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["size"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["date"];
 		// check for optional elements
 		if (array_key_exists("edition", $paintings[$i])) {
 			// add edition if it exists
-			$caption .=  " " . $paintings[$i]["edition"];
+			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["edition"];
 		}
 		if (array_key_exists("price", $paintings[$i])) {
 			// add price if it exists
-			$caption .=  " " . $paintings[$i]["price"];
+			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["price"];
 		}
 		// close the tag
 		$caption .= "</div>";
