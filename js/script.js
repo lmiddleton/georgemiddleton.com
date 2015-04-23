@@ -7,36 +7,43 @@ $(document).ready(function(){
 		
 		// start timer
 		var timer = setInterval(function() {
-			console.log('change');
 
 			// grab all the thumbnails
 			var thumbs = $('#thumb-nav').find('a');
-			console.log(thumbs);
 
 			// loop over thumbs to find the active one
 			var numThumbs = thumbs.length;
 			for(var i = 0; i < numThumbs; i++) {
-				console.log(thumbs[i]);
 				if($(thumbs[i]).hasClass('active-thumb')) {
-					// switch to the next one
-					console.log('switch!');
+					// store the query string for the next thumbnail
+					var next = $(thumbs[i + 1]).attr('href');
+					// parse for the category
+					var category = next.split('.')[0];
+					// parse for the image name
+					var image = next.split('=')[1];
+
+					$.ajax({
+						url: 'advance-image.php',
+						type: 'POST',
+						data: {
+							'category': category,
+							'image': image
+						},
+						success: function(data, textStatus, xhr) {
+							// convert return string to JSON
+							var returnedData = JSON.parse(data);
+							// load return into full image container
+							$('#img-parent').html(returnedData.full_image);
+							// load return into thumb container
+							$('#thumb-nav').html(returnedData.thumbnav);
+						},
+						error: function() {
+							//console.log('error');
+						}
+					});
 					return;
 				}
 			}
-
-			// once 
-
-			// find the highlighted thumbnail
-			//var current = $('#thumb-nav').find('a.active-thumb');
-			//console.log(current);
-
-			// get the href from the current image
-			//var href = $('#img-parent a').attr('href');
-			//console.log(href);
-
-			// call the href
-			// doesn't work because timer gets blown out when new page loads..
-			//window.location.assign(href);
 		}, 3000);
 
 		

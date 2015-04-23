@@ -1,4 +1,12 @@
 <?php
+
+	// handle post requests
+/*
+	if ($_POST["action"] = 'test')
+	{
+		echo "it worked!";
+	}
+	*/
 	
 	// loads the current image page based on its category
 	function load_image_page($category, $tpl)
