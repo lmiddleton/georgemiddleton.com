@@ -33,9 +33,26 @@ $(document).ready(function(){
 							// convert return string to JSON
 							var returnedData = JSON.parse(data);
 							// load return into full image container
-							$('#img-parent').html(returnedData.full_image);
-							// load return into thumb container
-							$('#thumb-nav').html(returnedData.thumbnav);
+							// fade current image out
+							//$('#img-parent').effect('fade', {}, 500);
+							$('#img-parent').fadeOut({
+								duration: 2000,
+								complete: function(){
+									$('#img-parent').html(returnedData.full_image);
+									// fade new image in
+									$('#img-parent').fadeIn({
+										duration: 2000,
+										complete: function() {
+											
+										}
+									});
+									// load return into thumb container
+									$('#thumb-nav').html(returnedData.thumbnav);
+								}
+							});
+							
+							
+							
 						},
 						error: function() {
 							//console.log('error');
@@ -44,7 +61,7 @@ $(document).ready(function(){
 					return;
 				}
 			}
-		}, 3000);
+		}, 6000);
 
 		
 
