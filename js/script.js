@@ -1,12 +1,19 @@
 $(document).ready(function(){
-	// init slideshow button
+	// init slideshow timer
+	var timer;
+
+	// init slideshow buttons
 	$('#play').click(function(event){
 		
 		// prevent href from firing
 		event.preventDefault();
+
+		// switch play/pause buttons
+		$('#play').hide();
+		$('#pause').show();
 		
 		// start timer
-		var timer = setInterval(function() {
+		timer = setInterval(function() {
 
 			// grab all the thumbnails
 			var thumbs = $('#thumb-nav').find('a');
@@ -32,9 +39,7 @@ $(document).ready(function(){
 						success: function(data, textStatus, xhr) {
 							// convert return string to JSON
 							var returnedData = JSON.parse(data);
-							// load return into full image container
 							// fade current image out
-							//$('#img-parent').effect('fade', {}, 500);
 							$('#img-parent').fadeOut({
 								duration: 2000,
 								complete: function(){
@@ -62,8 +67,17 @@ $(document).ready(function(){
 				}
 			}
 		}, 6000);
+	});
 
-		
+	$('#pause').click(function(event){
+		// prevent href from firing
+		event.preventDefault();
 
+		// switch play/pause buttons
+		$('#pause').hide();
+		$('#play').show();
+
+		// shut off the timer
+		window.clearInterval(timer);
 	});
 });

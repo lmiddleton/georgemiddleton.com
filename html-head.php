@@ -128,6 +128,10 @@
 	a.active-thumb img {
 		border: solid 2px red;
 	}
+
+	.hidden {
+		display: none;
+	}
 </style>
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
