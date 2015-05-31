@@ -1,4 +1,4 @@
-<title>George Middleton - paintings inspired by visions of nature and spirit</title>
+<title>George Middleton</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -13,6 +13,10 @@
 
 	strong {
 		font-weight: bold;
+	}
+
+	p {
+		margin-top: 1em;
 	}
 
 	#container {
@@ -71,6 +75,7 @@
 
 	.caption {
 		/*background-color: white;*/
+		color: #828992;
 		font-size: 0.8em;
 		text-align: center;
 	}
@@ -84,12 +89,14 @@
 	}
 
 	.text-container {
+		color: #6a6a6a;
 		width: 900px; /* max full size */
 	}
 
 	#footer {
 		/*background-color: orange;*/
 		bottom: 0;
+		color: #828992;
 		font-size: 0.7em;
 		clear: both;
 		position: absolute;
@@ -126,7 +133,7 @@
 	}
 
 	a.active-thumb img {
-		border: solid 2px red;
+		border: solid 2px #070707;
 	}
 
 	.hidden {
