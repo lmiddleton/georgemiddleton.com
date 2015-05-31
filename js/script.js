@@ -46,21 +46,12 @@ $(document).ready(function(){
 									$('#img-parent').html(returnedData.full_image);
 									// fade new image in
 									$('#img-parent').fadeIn({
-										duration: 2000,
-										complete: function() {
-											
-										}
+										duration: 2000
 									});
 									// load return into thumb container
 									$('#thumb-nav').html(returnedData.thumbnav);
 								}
 							});
-							
-							
-							
-						},
-						error: function() {
-							//console.log('error');
 						}
 					});
 					return;
