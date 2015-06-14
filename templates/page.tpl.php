@@ -10,9 +10,7 @@
 		<div id="header">
 			<?php include 'header.php';?>
 		</div>
-		<div>
 			<?php include $this->file;?>
-		</div>
 		<div id="footer">
 			<?php include 'footer.php';?>
 		</div>

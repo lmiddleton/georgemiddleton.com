@@ -17,19 +17,23 @@
 
 	p {
 		margin-top: 1em;
+		line-height: 1.5em;
 	}
 
 	#container {
 		/*background-color: pink;*/
 		font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-		height: 685px;	/* MCA height */
+		/*height: 685px;*/	/* MCA height */
+		min-height: 685px;
 		margin: auto;	/* center MCA horizontally */
 		position: relative;
 		width: 1028px;	/* MCA width */
+		padding-bottom: 15px; /* footer height */
 	}
 
 	#header {
 		/*background-color: yellow;*/
+		margin-top: 0.5em;
 		text-align: center;
 		width: 900px; /* max full size */
 	}
@@ -52,8 +56,15 @@
 
 	#ss-controls {
 		/*background-color: green;*/
+		font-size: 0.9em;
 		text-align: center;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 		width: 900px; /* max full size */
+	}
+
+	#ss-controls a {
+		margin-right: 0.5em;
 	}
 
 	#img-parent {
@@ -77,6 +88,8 @@
 		/*background-color: white;*/
 		color: #828992;
 		font-size: 0.8em;
+		margin-top: 0.5em;
+		margin-bottom: 1.5em;
 		text-align: center;
 	}
 
@@ -90,6 +103,8 @@
 
 	.text-container {
 		color: #6a6a6a;
+		font-size: .9em;
+		text-align: justify;
 		width: 900px; /* max full size */
 	}
 
@@ -98,6 +113,7 @@
 		bottom: 0;
 		color: #828992;
 		font-size: 0.7em;
+		height: 15px;
 		clear: both;
 		position: absolute;
 		text-align: center;
@@ -139,10 +155,16 @@
 	.hidden {
 		display: none;
 	}
+
+	#bio-link {
+		text-align: center;
+	}
 </style>
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<!-- 
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+-->

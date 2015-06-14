@@ -12,7 +12,7 @@
 		Indeed, I love the craft, the decorative expression, and the technical issues of painting- the sheer pleasure of making something of quality with my own hands. I strive to create the beautiful object, an icon imbued with these feelings..
 	</p>
 
-	<p>
+	<p id="bio-link">
 		<a href="">Bio and CV.pdf</a>
 	</p>
 </div>
