@@ -8,17 +8,9 @@
 		Carlisle, MA 01741<br />
 		(508) 254-5489
 	</p>
-	<p style="text-align: center;">
-		<a href="">Purchasing Information</a>
-	</p>
+	
 	<div>
-		<p>
-			Please feel free to contact me with any questions, for painting purchases, and for a discount on orders of two or more prints. I am also available for commissioned work and illustration projects, and certain works are available for licensing or usage.
-		</p>
-		<p>
-			Hi-resolution photos are available for all paintings for sale. Paintings on gallery-wrapped stretcher frames or cradled panels have hand-finished edges, and are suitable for display "out of the box". All prints are made with archival materials, are hand-signed, numbered, and dated, and include a certificate of authenticity. Payment is through Paypal. Shipping cost is included for prints, extra for paintings. Mass. customers add sales tax. Please allow two weeks for delivery. If you are dissatisfied for any reason with your purchase, or the artwork is damaged, return the work for a full refund within 14 days from the day you receive it. You pay the return shipping cost.
-		</p>
-
+	
 		<p>
 			Please subscribe to my studio newsletter for advanced notice of new work and exhibits.
 		</p>
