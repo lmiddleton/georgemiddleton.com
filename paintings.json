@@ -335,7 +335,7 @@
         "date":"2014",
         "edition": "edition of 4",
         "price":"$100",
-        "buy-now-code-filename":""
+        "buy-now-code-filename":"meditation-i.txt"
     },
     {
         "title":"Ocean Dancers IV",
@@ -374,7 +374,7 @@
         "date":"2013",
         "edition":"edition of 3",
         "price":"$225",
-        "buy-now-code-filename":""
+        "buy-now-code-filename":"angelus.txt"
     },
     {
         "title":"Manowar",
@@ -413,7 +413,7 @@
         "date":"2009",
         "edition":"edition of 250",
         "price":"$40",
-        "buy-now-code-filename":""
+        "buy-now-code-filename":"scotties-tropical.txt"
     },
     {
         "title":"Shrimp Gumbo",
