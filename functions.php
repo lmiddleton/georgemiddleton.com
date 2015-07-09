@@ -307,6 +307,10 @@
 			// add edition if it exists
 			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["edition"];
 		}
+		if (array_key_exists("for", $paintings[$i])) {
+			// add for if it exists
+			$caption .= "&nbsp&nbsp&nbsp" . $paintings[$i]["for"];
+		}
 		if (array_key_exists("price", $paintings[$i])) {
 			// add price if it exists
 			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["price"];
@@ -319,6 +323,10 @@
 			//echo $code;
 			// add it to the caption
 			$caption .= $code;
+		}
+		if (array_key_exists("print", $paintings[$i])) {
+			// add print available link if it exists
+			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["print"];
 		}
 		// close the tag
 		$caption .= "</div>";

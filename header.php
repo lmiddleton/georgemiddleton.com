@@ -6,7 +6,7 @@
 	<img src="assets/Divider.gif" alt="" />
 	<a href="prints.php" class="text">Prints</a>
 	<img src="assets/Divider.gif" alt="" />
-	<a href="illustration.php" class="text">Illustration</a>
+	<a href="illustrations.php" class="text">Illustration</a>
 	<img src="assets/Divider.gif" alt="" />
 	<a href="about.php" class="text">About</a>
 	<img src="assets/Divider.gif" alt="" />

@@ -8,7 +8,7 @@
     	"medium":"acrylic on cradled hardwood panel",
     	"size":"27\" x 48.5\" x 2\"",
     	"date":"2014",
-    	"price":"$4000"
+    	"price":"$3800"
     },
     {   "title":"Triple Play",
         "include":true,
@@ -52,13 +52,12 @@
     },
     {   "title":"Divided Sky",
         "include":true,
-        "category":"current",
+        "category":"past",
         "full-filename":"Divided-Sky-by-George-Middleton.jpg",
         "thumb-filename":"Divided-Sky-by-George-Middleton-Thumb.jpg",
         "medium":"acrylic on inkjet on cradled wood panel",
         "size":"20.25\" x 20.25\" x 2\"",
-        "date":"2008",
-        "price":"$2000"
+        "date":"2008"
     },
     {   "title":"Redman",
         "include":true,
@@ -68,7 +67,8 @@
         "medium":"watercolor on paper",
         "size":"10.25\" x 14\"",
         "date":"1997",
-        "price":"$325"
+        "price":"$325",
+        "print": "print available"
     },
     {   "title":"And They Came From The Sea",
         "include":true,
@@ -78,7 +78,8 @@
         "medium":"watercolor and gouache on paper",
         "size":"7.5\" x 11\"",
         "date":"2011",
-        "price":"$325"
+        "price":"$325",
+        "print": "print available"
     },
     {   "title":"Tracker",
         "include":true,
@@ -128,7 +129,67 @@
         "thumb-filename":"Encounter-Blue-Dancer-by-George-Middleton-Thumb.jpg",
         "medium":"acrylic on canvas with collage, diptych",
         "size":"24\" x 58\"",
-        "date":"1997-1999"
+        "date":"1999"
+    },
+    {
+        "title":"Acadian Shore IV",
+        "include":true,
+        "category":"past",
+        "full-filename":"Acadian-Shore-IV-by-George-Middleton.jpg",
+        "thumb-filename":"Acadian-Shore-IV-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor and gouache on paper",
+        "size":"10\" x 14\"",
+        "date":"1998"
+    },
+    {
+        "title":"Foggy Lake",
+        "include":true,
+        "category":"past",
+        "full-filename":"Foggy-Lake-by-George-Middleton.jpg",
+        "thumb-filename":"Foggy-Lake-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor on paper",
+        "size":"10\" x 14\"",
+        "date":"1998"
+    },
+    {
+        "title":"Bighorn II",
+        "include":true,
+        "category":"past",
+        "full-filename":"Bighorn-II-by-George-Middleton.jpg",
+        "thumb-filename":"Bighorn-II-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor on paper",
+        "size":"10\" x 14\"",
+        "date":"1998"
+    },
+    {
+        "title":"Loons",
+        "include":true,
+        "category":"past",
+        "full-filename":"Loons-by-George-Middleton.jpg",
+        "thumb-filename":"Loons-by-George-Middleton-Thumb.jpg",
+        "medium":"acrylic on masonite panel",
+        "size":"22\" x 24\"",
+        "date":"1998"
+    },
+    {
+        "title":"Bighorn III",
+        "include":true,
+        "category":"past",
+        "full-filename":"Bighorn-III-by-George-Middleton.jpg",
+        "thumb-filename":"Bighorn-III-by-George-Middleton-Thumb.jpg",
+        "medium":"acrylic on canvas",
+        "size":"18\" x 24\"",
+        "date":"1998"
+    },
+    {
+        "title":"Navaho Mountain",
+        "include":true,
+        "category":"past",
+        "full-filename":"Navaho-Mountain-by-George-Middleton.jpg",
+        "thumb-filename":"Navaho-Mountain-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor on paper",
+        "size":"10\" x 14\"",
+        "date":"1998"
     },
     {
         "title":"Crop Duster",
@@ -141,14 +202,74 @@
         "date":"1997"
     },
     {
+        "title":"Acadian Shore II",
+        "include":true,
+        "category":"past",
+        "full-filename":"Acadian-Shore-II-by-George-Middleton.jpg",
+        "thumb-filename":"Acadian-Shore-II-by-George-Middleton-Thumb.jpg",
+        "medium":"oil on masonite panel",
+        "size":"12\" x 16\"",
+        "date":"1997"
+    },
+    {
+        "title":"Grand Canyon",
+        "include":true,
+        "category":"past",
+        "full-filename":"Grand-Canyon-by-George-Middleton.jpg",
+        "thumb-filename":"Grand-Canyon-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor and gouache on paper",
+        "size":"12\" x 16\"",
+        "date":"1995"
+    },
+    {
+        "title":"Bighorn I",
+        "include":true,
+        "category":"past",
+        "full-filename":"Bighorn-I-by-George-Middleton.jpg",
+        "thumb-filename":"Bighorn-I-by-George-Middleton-Thumb.jpg",
+        "medium":"oil on masonite panel",
+        "size":"16\" x 24\"",
+        "date":"1995"
+    },
+    {
         "title":"Water Spirit",
         "include":true,
         "category":"past",
         "full-filename":"Water-Spirit-by-George-Middleton.jpg",
         "thumb-filename":"Water-Spirit-by-George-Middleton-Thumb.jpg",
-        "medium":"acrylic on wood panel",
+        "medium":"acrylic on masonite panel",
         "size":"18\" x 22\"",
         "date":"1994"
+    },
+    {
+        "title":"Lemon Sky Lake",
+        "include":true,
+        "category":"past",
+        "full-filename":"Lemon-Sky-Lake-by-George-Middleton.jpg",
+        "thumb-filename":"Lemon-Sky-Lake-by-George-Middleton-Thumb.jpg",
+        "medium":"acrylic on masonite panel",
+        "size":"18\" x 23\"",
+        "date":"1994"
+    },
+    {
+        "title":"Carlisle Pines",
+        "include":true,
+        "category":"past",
+        "full-filename":"Carlisle-Pines-by-George-Middleton.jpg",
+        "thumb-filename":"Carlisle-Pines-by-George-Middleton-Thumb.jpg",
+        "medium":"oil on masonite panel",
+        "size":"10\" x 8\"",
+        "date":"1992"
+    },
+    {
+        "title":"Red Dock",
+        "include":true,
+        "category":"past",
+        "full-filename":"Red-Dock-by-George-Middleton.jpg",
+        "thumb-filename":"Red-Dock-by-George-Middleton-Thumb.jpg",
+        "medium":"acrylic on canvas",
+        "size":"22\" x 30\"",
+        "date":"1992"
     },
     {
         "title":"Vigil",
@@ -181,6 +302,16 @@
         "date":"1982"
     },
     {
+        "title":"Skaters",
+        "include":true,
+        "category":"past",
+        "full-filename":"Skaters-by-George-Middleton.jpg",
+        "thumb-filename":"Skaters-by-George-Middleton-Thumb.jpg",
+        "medium":"watercolor on paper",
+        "size":"14\" x 17\"",
+        "date":"1979"
+    },
+    {
     	"title":"Blue Angel",
     	"include":true,
     	"category":"prints",
@@ -189,9 +320,22 @@
     	"medium":"inkjet reproduction of original w/c",
     	"size":"12\" x 12\"",
     	"date":"2015",
-    	"edition": "edition of 100",
+    	"edition": "edition of 90",
     	"price":"$40",
     	"buy-now-code-filename":"blue-angel.txt"
+    },
+    {
+        "title":"Meditation I",
+        "include":true,
+        "category":"prints",
+        "full-filename":"Meditation-I-by-George-Middleton.jpg",
+        "thumb-filename":"Meditation-I-by-George-Middleton-Thumb.jpg",
+        "medium":"inkjet",
+        "size":"19\" x 15\"",
+        "date":"2014",
+        "edition": "edition of 4",
+        "price":"$100",
+        "buy-now-code-filename":""
     },
     {
         "title":"Ocean Dancers IV",
@@ -205,6 +349,32 @@
         "edition":"edition of 90",
         "price":"$50",
         "buy-now-code-filename":"ocean-dancers-iv.txt"
+    },
+    {
+        "title":"And They Came from the Sea",
+        "include":true,
+        "category":"prints",
+        "full-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton.jpg",
+        "thumb-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton-Thumb.jpg",
+        "medium":"inkjet reproduction of original w/c",
+        "size":"18.5\" x 12\"",
+        "date":"2011",
+        "edition":"edition of 90",
+        "price":"$35",
+        "buy-now-code-filename":"and-they-came-from-the-sea.txt"
+    },
+    {
+        "title":"Angelus",
+        "include":true,
+        "category":"prints",
+        "full-filename":"Angelus-by-George-Middleton.jpg",
+        "thumb-filename":"Angelus-by-George-Middleton-Thumb.jpg",
+        "medium":"inkjet on gallery stretched canvas",
+        "size":"22\" x 28\"",
+        "date":"2013",
+        "edition":"edition of 3",
+        "price":"$225",
+        "buy-now-code-filename":""
     },
     {
         "title":"Manowar",
@@ -233,16 +403,171 @@
         "buy-now-code-filename":"redman.txt"
     },
     {
-        "title":"And They Came from the Sea",
+        "title":"Scottie's Tropical",
         "include":true,
         "category":"prints",
-        "full-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton.jpg",
-        "thumb-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton-Thumb.jpg",
-        "medium":"inkjet reproduction of original w/c",
-        "size":"18.5\" x 12\"",
-        "date":"2011",
-        "edition":"edition of 90",
-        "price":"$35",
-        "buy-now-code-filename":"and-they-came-from-the-sea.txt"
+        "full-filename":"Scotties-Tropical-Print-by-George-Middleton.jpg",
+        "thumb-filename":"Scotties-Tropical-Print-by-George-Middleton-Thumb.jpg",
+        "medium":"inkjet",
+        "size":"10.75\" x 14.25\"",
+        "date":"2009",
+        "edition":"edition of 250",
+        "price":"$40",
+        "buy-now-code-filename":""
+    },
+    {
+        "title":"Shrimp Gumbo",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Shrimp-Gumbo-by-George-Middleton.jpg",
+        "thumb-filename": "Shrimp-Gumbo-by-George-Middleton-Thumb.jpg",
+        "medium": "digital painting",
+        "size": "5.5\" x 7.5\"",
+        "date": "2012",
+        "for": "for <a href='http://www.oldwayspt.org'>Oldways.org</a>"
+    },
+    {
+        "title":"Mini-Med",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Mini-Med-by-George-Middleton.jpg",
+        "thumb-filename": "Mini-Med-by-George-Middleton-Thumb.jpg",
+        "medium": "digital painting",
+        "size": "8.5\" x 6.5\"",
+        "date": "2010",
+        "for": "for <a href='http://www.oldwayspt.org'>Oldways.org</a>"
+    },
+    {
+        "title":"Scottie's Tropical",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Scotties-Tropical-by-George-Middleton.jpg",
+        "thumb-filename": "Scotties-Tropical-by-George-Middleton-Thumb.jpg",
+        "medium": "digital painting",
+        "size": "12\" x 16\"",
+        "date": "2009",
+        "for": "for Scottie's Tissues",
+        "print": "print available"
+    },
+    {
+        "title":"Majesta Blossoms",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Majesta-Blossoms-by-George-Middleton.jpg",
+        "thumb-filename": "Majesta-Blossoms-by-George-Middleton-Thumb.jpg",
+        "medium": "digital painting",
+        "size": "10\" x 12\"",
+        "date": "2008",
+        "for": "for Scottie's Tissues"
+    },
+    {
+        "title":"Royale Magnolia",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Royale-Magnolia-by-George-Middleton.jpg",
+        "thumb-filename": "Royale-Magnolia-by-George-Middleton-Thumb.jpg",
+        "medium": "digital painting",
+        "size": "10\" x 12\"",
+        "date": "2008",
+        "for": "for Scottie's Tissues"
+    },
+    {
+        "title":"Plums and Tarragon",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Plum-Tarragon-by-George-Middleton.jpg",
+        "thumb-filename": "Plum-Tarragon-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on panel",
+        "size": "6\" x 10\"",
+        "date": "2007",
+        "for": "for <a href='http://www.spicedjam.com/index.html'>Kissel's Spiced jam</a>"
+    },
+    {
+        "title":"Apricot-Rosemary",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Apricot-Rosemary-by-George-MIddleton.jpg",
+        "thumb-filename": "Apricot-Rosemary-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on panel",
+        "size": "10\" x 16\"",
+        "date": "2007",
+        "for": "for <a href='http://www.spicedjam.com/index.html'>Kissel's Spiced jam</a>"
+    },
+    {
+        "title":"Strawberries & Basil",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Strawberry-Basil-by-George-Middleton.jpg",
+        "thumb-filename": "Strawberry-Basil-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on panel",
+        "size": "8\" x 12\"",
+        "date": "2006",
+        "for": "for <a href='http://www.spicedjam.com/index.html'>Kissel's Spiced jam</a>"
+    },
+    {
+        "title":"Seashells",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Seashells-by-George-Middleton.jpg",
+        "thumb-filename": "Seashells-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on canvas",
+        "size": "18\" x 18\"",
+        "date": "1998",
+        "for": "for Sarah Michaels bath products"
+    },
+    {
+        "title":"Peace Lily",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Peace-Lily-by-George-Middleton.jpg",
+        "thumb-filename": "Peace-Lily-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on canvas",
+        "size": "18\" x 18\"",
+        "date": "1997",
+        "for": "for Sarah Michaels bath products"
+    },
+    {
+        "title":"Vanilla Orchid",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Vanilla-Orchid-by-George-Middleton.jpg",
+        "thumb-filename": "Vanilla-Orchid-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on canvas",
+        "size": "18\" x 18\"",
+        "date": "1996",
+        "for": "for Sarah Michaels bath products"
+    },
+    {
+        "title":"Rasberries",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Rasberries-by-George-Middleton.jpg",
+        "thumb-filename": "Rasberries-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on canvas",
+        "size": "18\" x 18\"",
+        "date": "1996",
+        "for": "for Sarah Michaels bath products"
+    },
+    {
+        "title":"White Roses",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "White-Roses-by-George-Middleton.jpg",
+        "thumb-filename": "White-Roses-by-George-Middleton-Thumb.jpg",
+        "medium": "acrylic on canvas",
+        "size": "18\" x 14\"",
+        "date": "1996",
+        "for": "for Sarah Michaels bath products"
+    },
+    {
+        "title":"Lavender",
+        "include":true,
+        "category":"illustrations",
+        "full-filename": "Lavender-by-George-Middleton.jpg",
+        "thumb-filename": "Lavender-by-George-Middleton-Thumb.jpg",
+        "medium": "oil on canvas",
+        "size": "18\" x 14\"",
+        "date": "1991",
+        "for": "for Sarah Michaels bath products"
     }
 ]
