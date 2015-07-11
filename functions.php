@@ -230,7 +230,7 @@
 					$count++;
 
 					// if count is evenly divisible by 0, we need a break tag
-					if($count % 2 == 0) {
+					if($count % 3 == 0) {
 						$thumbnav .= "<br />";
 					}
 				}

@@ -27,7 +27,7 @@ $full_image = build_full_img($paintings, $image, $next_image, $category);
 $thumbnav = build_thumbnav($paintings, $image, $category);
 
 // build the data object to be returned
-$return_data = [];
+//$return_data = [];
 $return_data['full_image'] = $full_image;
 $return_data['thumbnav'] = $thumbnav;
 

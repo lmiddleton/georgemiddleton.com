@@ -52,6 +52,9 @@ $(document).ready(function(){
 									$('#thumb-nav').html(returnedData.thumbnav);
 								}
 							});
+						},
+						error: function() {
+							console.log();
 						}
 					});
 					return;

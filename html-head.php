@@ -8,16 +8,18 @@
 	h1 {
 		color: #555555;
 		display: inline-block;
-		font-size: 1.5em;
+		font-size: 1.4em;
 		/*margin-right: 0.5em;*/
-		margin-bottom: 0.5em;
+		margin-bottom: 0em;
 	}
 
 	#media-links-parent {
-		display: inline-block;
+		/*display: inline-block;*/
+		display: none;
 		position: absolute;
 		/*float: right;*/
 		right: 0;
+		top: 0px;
 	}
 
 	strong {
@@ -36,7 +38,7 @@
 		/*height: 685px;*/	/* MCA height */
 		min-height: 685px;
 		margin: auto;	/* center MCA horizontally */
-		margin-top: 1em;
+		margin-top: 2.3em;
 		position: relative;
 		width: 1028px;	/* MCA width */
 		padding-bottom: 15px; /* footer height */
@@ -53,7 +55,8 @@
 		/*display: inline;*/
 		font-size: .9em;
 		margin-bottom: 1.7em;
-		margin-top: 1.1em;
+		margin-top: 0.5em;
+		width: 800px;
 	}
 
 	#nav a.text {
@@ -75,24 +78,25 @@
 		/*background-color: green;*/
 		font-size: 0.8em;
 		text-align: center;
-		margin-top: 0.5em;
+		margin-top: -1.5em;
 		margin-bottom: 0.5em;
-		width: 900px; /* max full size */
+		/*width: 800px;*/ /* max full size */
 	}
 
 	#ss-controls a {
-		margin-right: 0.5em;
+		margin-left: 0.5em;
 	}
 
 	#img-parent {
 		/*background-color: yellow;*/
 		float: left;
 		text-align: center;
-		width: 900px; /* max full size */
+		width: 800px; /* max full size */
 	}
 
 	img.full {
 		border: solid 1px black;
+		width: 800px;
 	}
 
 	#thumb-nav {
@@ -135,7 +139,7 @@
 		clear: both;
 		/*position: absolute;*/
 		text-align: center;
-		width: 900px; /* max full size */
+		width: 800px; /* max full size */
 	}
 
 	a:link {
