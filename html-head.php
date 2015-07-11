@@ -1,4 +1,5 @@
 <title>George Middleton</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -6,9 +7,17 @@
 <style>
 	h1 {
 		color: #555555;
-		display: inline;
-		font-size: 1.1em;
-		margin-right: 0.5em;
+		display: inline-block;
+		font-size: 1.5em;
+		/*margin-right: 0.5em;*/
+		margin-bottom: 0.5em;
+	}
+
+	#media-links-parent {
+		display: inline-block;
+		position: absolute;
+		/*float: right;*/
+		right: 0;
 	}
 
 	strong {
@@ -22,10 +31,12 @@
 
 	#container {
 		/*background-color: pink;*/
-		font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+		/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
+		font-family: 'Open Sans', sans-serif;
 		/*height: 685px;*/	/* MCA height */
 		min-height: 685px;
 		margin: auto;	/* center MCA horizontally */
+		margin-top: 1em;
 		position: relative;
 		width: 1028px;	/* MCA width */
 		padding-bottom: 15px; /* footer height */
@@ -34,29 +45,35 @@
 	#header {
 		/*background-color: yellow;*/
 		margin-top: 0.5em;
-		text-align: center;
 		width: 900px; /* max full size */
 	}
 
 	#nav {
 		color: #828992;
-		display: inline;
+		/*display: inline;*/
 		font-size: .9em;
+		margin-bottom: 1.7em;
+		margin-top: 1.1em;
 	}
 
 	#nav a.text {
+		/*margin-left: .5em;*/
+		/*margin-right: .5em;*/
+	}
+
+	#nav img.divider {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
 
-	#nav a.img {
+	#media-links-parent a.img {
 		margin-left: .2em;
 		margin-right: .2em;
 	}
 
 	#ss-controls {
 		/*background-color: green;*/
-		font-size: 0.9em;
+		font-size: 0.8em;
 		text-align: center;
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
@@ -104,6 +121,7 @@
 	.text-container {
 		color: #6a6a6a;
 		font-size: .9em;
+		padding-top: 1em;
 		text-align: justify;
 		width: 900px; /* max full size */
 	}
@@ -115,7 +133,7 @@
 		font-size: 0.7em;
 		height: 15px;
 		clear: both;
-		position: absolute;
+		/*position: absolute;*/
 		text-align: center;
 		width: 900px; /* max full size */
 	}
