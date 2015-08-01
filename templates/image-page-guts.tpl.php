@@ -9,5 +9,7 @@
 		<a href="" id="pause" class="hidden">pause</a>
 		<a <?php print_next_href($this->paintings, $this->category, $this->next_image) ?>>next&gt;</a>
 	</div>
-	<?php echo $this->thumbnav;?>
+	<div id="thumbs-container">
+		<?php echo $this->thumbnav;?>
+	</div>
 </div>

@@ -5,8 +5,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
 <style>
+	body {
+		/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
+		font-family: 'Open Sans', sans-serif;
+		min-width: 1028px;
+	}
+
 	h1 {
-		color: #555555;
+		/*color: #555555;*/
+		color: white;
 		display: inline-block;
 		font-size: 1.4em;
 		/*margin-right: 0.5em;*/
@@ -14,10 +21,10 @@
 	}
 
 	#media-links-parent {
-		/*display: inline-block;*/
-		display: none;
-		position: absolute;
-		/*float: right;*/
+		display: inline-block;
+		/*display: none;*/
+		/*position: absolute;*/
+		float: right;
 		right: 0;
 		top: 0px;
 	}
@@ -27,27 +34,32 @@
 	}
 
 	p {
-		margin-top: 1em;
+		margin-bottom: 2.5em;
 		line-height: 1.5em;
 	}
 
 	#container {
-		/*background-color: pink;*/
-		/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
-		font-family: 'Open Sans', sans-serif;
+		background-color: white;
 		/*height: 685px;*/	/* MCA height */
-		min-height: 685px;
+		min-height: 700px;
 		margin: auto;	/* center MCA horizontally */
-		margin-top: 2.3em;
 		position: relative;
 		width: 1028px;	/* MCA width */
 		padding-bottom: 15px; /* footer height */
+		margin-top: 2.5em;
 	}
 
 	#header {
-		/*background-color: yellow;*/
-		margin-top: 0.5em;
-		width: 900px; /* max full size */
+		background-color: #444444;
+		padding-top: 3em;
+		padding-bottom: 0.2em;
+		/*margin-top: 0.5em;*/
+	}
+
+	#header-guts {
+		margin: auto;
+		/*width: 900px;*/ /* max full size */
+		width: 1028px;
 	}
 
 	#nav {
@@ -56,7 +68,8 @@
 		font-size: .9em;
 		margin-bottom: 1.7em;
 		margin-top: 0.5em;
-		width: 800px;
+		/*width: 800px;*/
+		width: 1028px;
 	}
 
 	#nav a.text {
@@ -70,8 +83,8 @@
 	}
 
 	#media-links-parent a.img {
-		margin-left: .2em;
-		margin-right: .2em;
+		margin-left: .3em;
+		margin-right: .3em;
 	}
 
 	#ss-controls {
@@ -84,7 +97,7 @@
 	}
 
 	#ss-controls a {
-		margin-left: 0.5em;
+		margin-right: 0.5em;
 	}
 
 	#img-parent {
@@ -95,8 +108,9 @@
 	}
 
 	img.full {
-		border: solid 1px black;
-		width: 800px;
+		border: solid 1px #efefef;
+		/*width: 800px;*/
+		max-width: 800px;
 	}
 
 	#thumb-nav {
@@ -109,13 +123,19 @@
 		/*background-color: white;*/
 		color: #828992;
 		font-size: 0.8em;
-		margin-top: 0.5em;
+		margin-top: 1em;
 		margin-bottom: 1.5em;
 		text-align: center;
 	}
 
 	.caption form {
 		display: inline;
+	}
+
+	.caption input {
+		margin-left: 0.5em;
+		margin-top: -0.5em;
+		vertical-align: middle;
 	}
 
 	span.title {
@@ -137,7 +157,7 @@
 		font-size: 0.7em;
 		height: 15px;
 		clear: both;
-		/*position: absolute;*/
+		position: absolute;
 		text-align: center;
 		width: 800px; /* max full size */
 	}
@@ -179,6 +199,7 @@
 	}
 
 	#bio-link {
+		margin-top: 3em;
 		text-align: center;
 	}
 </style>

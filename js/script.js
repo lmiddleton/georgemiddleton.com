@@ -16,7 +16,7 @@ $(document).ready(function(){
 		timer = setInterval(function() {
 
 			// grab all the thumbnails
-			var thumbs = $('#thumb-nav').find('a');
+			var thumbs = $('#thumbs-container').find('a');
 
 			// loop over thumbs to find the active one
 			var numThumbs = thumbs.length;
@@ -49,7 +49,7 @@ $(document).ready(function(){
 										duration: 2000
 									});
 									// load return into thumb container
-									$('#thumb-nav').html(returnedData.thumbnav);
+									$('#thumbs-container').html(returnedData.thumbnav);
 								}
 							});
 						},
