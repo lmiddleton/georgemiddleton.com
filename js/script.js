@@ -23,7 +23,16 @@ $(document).ready(function(){
 			for(var i = 0; i < numThumbs; i++) {
 				if($(thumbs[i]).hasClass('active-thumb')) {
 					// store the query string for the next thumbnail
-					var next = $(thumbs[i + 1]).attr('href');
+					var next;
+					// if we are at the end
+					if((i + 1) == numThumbs) {
+						// start again at the begininng
+						next = $(thumbs[0]).attr('href');
+					}
+					else {
+						// go to the next thumbnail
+						next = $(thumbs[i + 1]).attr('href');
+					}
 					// parse for the category
 					var category = next.split('.')[0];
 					// parse for the image name

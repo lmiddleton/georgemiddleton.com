@@ -326,7 +326,19 @@
 		}
 		if (array_key_exists("print", $paintings[$i])) {
 			// add print available link if it exists
-			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["print"];
+			// find the corresponding print with the same name
+			// count number of painting arrays
+			$len = count($paintings);
+			$print_href = "";
+			for($j = 0; $j < $len; ++$j) {
+				if($paintings[$j]["category"] == "prints" && $paintings[$j]["title"] == $paintings[$i]["title"]) {
+					// TODO: should factor out building the href for a full size image
+					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"];
+					break;
+				}
+			}
+
+			$caption .=  "&nbsp&nbsp&nbsp<a href=" . $print_href . ">" . $paintings[$i]["print"] . "</a>";
 		}
 		// close the tag
 		$caption .= "</div>";
