@@ -1,7 +1,6 @@
 [
     {	"title":"Arc of the Divers",
         "id":"Arc%of%the%Divers",
-    	"include":true,
     	"category":"current",
     	"full-filename":"Arc-of-the-Divers-by-George-Middleton.jpg",
     	"thumb-filename":"Arc-of-the-Divers-by-George-Middleton-Thumb.jpg",
@@ -11,7 +10,6 @@
     	"price":"$3800"
     },
     {   "title":"Triple Play",
-        "include":true,
         "category":"current",
         "full-filename":"Triple-Play-by-George-Middleton.jpg",
         "thumb-filename":"Triple-Play-by-George-Middleton-Thumb.jpg",
@@ -21,7 +19,6 @@
         "price":"$3600"
     },
     {   "title":"Nocturne",
-        "include":true,
         "category":"current",
         "full-filename":"Nocturne-by-George-Middleton.jpg",
         "thumb-filename":"Nocturne-by-George-Middleton-Thumb.jpg",
@@ -31,7 +28,6 @@
         "price":"$2500"
     },
     {   "title":"Fire Dancer",
-        "include":true,
         "category":"current",
         "full-filename":"Fire-Dancer-by-George-MIddleton.jpg",
         "thumb-filename":"Fire-Dancer-by-George-MIddleton-Thumb.jpg",
@@ -41,7 +37,6 @@
         "price":"$2500"
     },
     {   "title":"Standing Wave",
-        "include":true,
         "category":"current",
         "full-filename":"Standing-Wave-by-George-Middleton.jpg",
         "thumb-filename":"Standing-Wave-by-George-Middleton-Thumb.jpg",
@@ -51,7 +46,6 @@
         "price":"$2800"
     },
     {   "title":"Divided Sky",
-        "include":true,
         "category":"current",
         "full-filename":"Divided-Sky-by-George-Middleton.jpg",
         "thumb-filename":"Divided-Sky-by-George-Middleton-Thumb.jpg",
@@ -60,7 +54,6 @@
         "date":"2008"
     },
     {   "title":"Redman",
-        "include":true,
         "category":"current",
         "full-filename":"Redman-by-George-Middleton.jpg",
         "thumb-filename":"Redman-by-George-Middleton-Thumb.jpg",
@@ -71,7 +64,6 @@
         "print": "print available"
     },
     {   "title":"And They Came From The Sea",
-        "include":true,
         "category":"current",
         "full-filename":"And-They-Came-from-the-Sea-by-George-Middleton.jpg",
         "thumb-filename":"And-They-Came-from-the-Sea-by-George-Middleton.jpg",
@@ -82,7 +74,6 @@
         "print": "print available"
     },
     {   "title":"Tracker",
-        "include":true,
         "category":"current",
         "full-filename":"Tracker-by-George-Middleton.jpg",
         "thumb-filename":"Tracker-by-George-Middleton-Thumb.jpg",
@@ -93,7 +84,6 @@
     },
     {
     	"title":"Ocean Dancers III",
-    	"include":true,
     	"category":"current",
     	"full-filename":"Ocean-Dancers-III-by-George-Middleton.jpg",
     	"thumb-filename":"Ocean-Dancers-III-by-George-Middleton-Thumb.jpg",
@@ -103,7 +93,6 @@
     },
     {
         "title":"Moon Dancer",
-        "include":true,
         "category":"current",
         "full-filename":"Moon-Dancer-by-George-Middleton.jpg",
         "thumb-filename":"Moon-Dancer-by-George-Middleton-Thumb.jpg",
@@ -113,7 +102,6 @@
     },
     {
         "title":"Blue Geronimo",
-        "include":true,
         "category":"current",
         "full-filename":"Blue-Geronimo-by-George-Middleton.jpg",
         "thumb-filename":"Blue-Geronimo-by-George-Middleton-Thumb.jpg",
@@ -123,7 +111,6 @@
     },
     {
         "title":"Encounter/Blue Dancer",
-        "include":true,
         "category":"current",
         "full-filename":"Encounter-Blue-Dancer-by-George-Middleton.jpg",
         "thumb-filename":"Encounter-Blue-Dancer-by-George-Middleton-Thumb.jpg",
@@ -133,7 +120,6 @@
     },
     {
         "title":"Acadian Shore IV",
-        "include":true,
         "category":"current",
         "full-filename":"Acadian-Shore-IV-by-George-Middleton.jpg",
         "thumb-filename":"Acadian-Shore-IV-by-George-Middleton-Thumb.jpg",
@@ -143,7 +129,6 @@
     },
     {
         "title":"Foggy Lake",
-        "include":true,
         "category":"current",
         "full-filename":"Foggy-Lake-by-George-Middleton.jpg",
         "thumb-filename":"Foggy-Lake-by-George-Middleton-Thumb.jpg",
@@ -153,7 +138,6 @@
     },
     {
         "title":"Bighorn II",
-        "include":true,
         "category":"current",
         "full-filename":"Bighorn-II-by-George-Middleton.jpg",
         "thumb-filename":"Bighorn-II-by-George-Middleton-Thumb.jpg",
@@ -163,7 +147,6 @@
     },
     {
         "title":"Loons",
-        "include":true,
         "category":"current",
         "full-filename":"Loons-by-George-Middleton.jpg",
         "thumb-filename":"Loons-by-George-Middleton-Thumb.jpg",
@@ -173,7 +156,6 @@
     },
     {
         "title":"Bighorn III",
-        "include":true,
         "category":"current",
         "full-filename":"Bighorn-III-by-George-Middleton.jpg",
         "thumb-filename":"Bighorn-III-by-George-Middleton-Thumb.jpg",
@@ -183,7 +165,6 @@
     },
     {
         "title":"Navaho Mountain",
-        "include":true,
         "category":"current",
         "full-filename":"Navaho-Mountain-by-George-Middleton.jpg",
         "thumb-filename":"Navaho-Mountain-by-George-Middleton-Thumb.jpg",
@@ -193,7 +174,6 @@
     },
     {
         "title":"Crop Duster",
-        "include":true,
         "category":"current",
         "full-filename":"Crop-Duster-by-George-Middleton.jpg",
         "thumb-filename":"Crop-Duster-by-George-Middleton-Thumb.jpg",
@@ -203,7 +183,6 @@
     },
     {
         "title":"Acadian Shore II",
-        "include":true,
         "category":"current",
         "full-filename":"Acadian-Shore-II-by-George-Middleton.jpg",
         "thumb-filename":"Acadian-Shore-II-by-George-Middleton-Thumb.jpg",
@@ -213,7 +192,6 @@
     },
     {
         "title":"Grand Canyon",
-        "include":true,
         "category":"current",
         "full-filename":"Grand-Canyon-by-George-Middleton.jpg",
         "thumb-filename":"Grand-Canyon-by-George-Middleton-Thumb.jpg",
@@ -223,7 +201,6 @@
     },
     {
         "title":"Bighorn I",
-        "include":true,
         "category":"current",
         "full-filename":"Bighorn-I-by-George-Middleton.jpg",
         "thumb-filename":"Bighorn-I-by-George-Middleton-Thumb.jpg",
@@ -233,7 +210,6 @@
     },
     {
         "title":"Water Spirit",
-        "include":true,
         "category":"current",
         "full-filename":"Water-Spirit-by-George-Middleton.jpg",
         "thumb-filename":"Water-Spirit-by-George-Middleton-Thumb.jpg",
@@ -243,7 +219,6 @@
     },
     {
         "title":"Lemon Sky Lake",
-        "include":true,
         "category":"current",
         "full-filename":"Lemon-Sky-Lake-by-George-Middleton.jpg",
         "thumb-filename":"Lemon-Sky-Lake-by-George-Middleton-Thumb.jpg",
@@ -253,7 +228,6 @@
     },
     {
         "title":"Carlisle Pines",
-        "include":true,
         "category":"current",
         "full-filename":"Carlisle-Pines-by-George-Middleton.jpg",
         "thumb-filename":"Carlisle-Pines-by-George-Middleton-Thumb.jpg",
@@ -263,7 +237,6 @@
     },
     {
         "title":"Red Dock",
-        "include":true,
         "category":"current",
         "full-filename":"Red-Dock-by-George-Middleton.jpg",
         "thumb-filename":"Red-Dock-by-George-Middleton-Thumb.jpg",
@@ -273,7 +246,6 @@
     },
     {
         "title":"Vigil",
-        "include":true,
         "category":"current",
         "full-filename":"Vigil-by-George-Middleton.jpg",
         "thumb-filename":"Vigil-by-George-Middleton-Thumb.jpg",
@@ -283,7 +255,6 @@
     },
     {
         "title":"Vision Quest",
-        "include":true,
         "category":"current",
         "full-filename":"Vision-Quest-by-George-Middleton.jpg",
         "thumb-filename":"Vision-Quest-by-George-Middleton-Thumb.jpg",
@@ -293,7 +264,6 @@
     },
     {
         "title":"Passage",
-        "include":true,
         "category":"current",
         "full-filename":"Passage-by-George-Middleton.jpg",
         "thumb-filename":"Passage-by-George-Middleton-Thumb.jpg",
@@ -303,7 +273,6 @@
     },
     {
         "title":"Skaters",
-        "include":true,
         "category":"current",
         "full-filename":"Skaters-by-George-Middleton.jpg",
         "thumb-filename":"Skaters-by-George-Middleton-Thumb.jpg",
@@ -313,7 +282,6 @@
     },
     {
     	"title":"Blue Angel",
-    	"include":true,
     	"category":"prints",
     	"full-filename":"Blue-Angel-Print-by-George-Middleton.jpg",
     	"thumb-filename":"Blue-Angel-Print-by-George-Middleton-Thumb.jpg",
@@ -326,7 +294,6 @@
     },
     {
         "title":"Meditation I",
-        "include":true,
         "category":"prints",
         "full-filename":"Meditation-I-by-George-Middleton.jpg",
         "thumb-filename":"Meditation-I-by-George-Middleton-Thumb.jpg",
@@ -339,7 +306,6 @@
     },
     {
         "title":"Ocean Dancers IV",
-        "include":true,
         "category":"prints",
         "full-filename":"Ocean-Dancers-IV-Print-by-George-Middleton.jpg",
         "thumb-filename":"Ocean-Dancers-IV-Print-by-George-Middleton-Thumb.jpg",
@@ -352,7 +318,6 @@
     },
     {
         "title":"And They Came from the Sea",
-        "include":true,
         "category":"prints",
         "full-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton.jpg",
         "thumb-filename":"And-They-Came-from-the-Sea-Print-by-George-Middleton-Thumb.jpg",
@@ -365,7 +330,6 @@
     },
     {
         "title":"Angelus",
-        "include":true,
         "category":"prints",
         "full-filename":"Angelus-by-George-Middleton.jpg",
         "thumb-filename":"Angelus-by-George-Middleton-Thumb.jpg",
@@ -378,7 +342,6 @@
     },
     {
         "title":"Manowar",
-        "include":true,
         "category":"prints",
         "full-filename":"Manowar-Print-by-George-Middleton.jpg",
         "thumb-filename":"Manowar-Print-by-George-Middleton-Thumb.jpg",
@@ -391,7 +354,6 @@
     },
     {
         "title":"Redman",
-        "include":true,
         "category":"prints",
         "full-filename":"Redman-Print-by-George-Middleton.jpg",
         "thumb-filename":"Redman-Print-by-George-Middleton-Thumb.jpg",
@@ -404,7 +366,6 @@
     },
     {
         "title":"Scottie's Tropical",
-        "include":true,
         "category":"prints",
         "full-filename":"Scotties-Tropical-Print-by-George-Middleton.jpg",
         "thumb-filename":"Scotties-Tropical-Print-by-George-Middleton-Thumb.jpg",
@@ -417,7 +378,6 @@
     },
     {
         "title":"Shrimp Gumbo",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Shrimp-Gumbo-by-George-Middleton.jpg",
         "thumb-filename": "Shrimp-Gumbo-by-George-Middleton-Thumb.jpg",
@@ -428,7 +388,6 @@
     },
     {
         "title":"Mini-Med",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Mini-Med-by-George-Middleton.jpg",
         "thumb-filename": "Mini-Med-by-George-Middleton-Thumb.jpg",
@@ -439,7 +398,6 @@
     },
     {
         "title":"Scottie's Tropical",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Scotties-Tropical-by-George-Middleton.jpg",
         "thumb-filename": "Scotties-Tropical-by-George-Middleton-Thumb.jpg",
@@ -451,7 +409,6 @@
     },
     {
         "title":"Majesta Blossoms",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Majesta-Blossoms-by-George-Middleton.jpg",
         "thumb-filename": "Majesta-Blossoms-by-George-Middleton-Thumb.jpg",
@@ -462,7 +419,6 @@
     },
     {
         "title":"Royale Magnolia",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Royale-Magnolia-by-George-Middleton.jpg",
         "thumb-filename": "Royale-Magnolia-by-George-Middleton-Thumb.jpg",
@@ -473,7 +429,6 @@
     },
     {
         "title":"Plums and Tarragon",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Plum-Tarragon-by-George-Middleton.jpg",
         "thumb-filename": "Plum-Tarragon-by-George-Middleton-Thumb.jpg",
@@ -484,7 +439,6 @@
     },
     {
         "title":"Apricot-Rosemary",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Apricot-Rosemary-by-George-MIddleton.jpg",
         "thumb-filename": "Apricot-Rosemary-by-George-Middleton-Thumb.jpg",
@@ -494,8 +448,7 @@
         "for": "for <a href='http://www.spicedjam.com/index.html'>Kissel's Spiced jam</a>"
     },
     {
-        "title":"Strawberries & Basil",
-        "include":true,
+        "title":"Strawberries and Basil",
         "category":"illustrations",
         "full-filename": "Strawberry-Basil-by-George-Middleton.jpg",
         "thumb-filename": "Strawberry-Basil-by-George-Middleton-Thumb.jpg",
@@ -506,7 +459,6 @@
     },
     {
         "title":"Seashells",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Seashells-by-George-Middleton.jpg",
         "thumb-filename": "Seashells-by-George-Middleton-Thumb.jpg",
@@ -517,7 +469,6 @@
     },
     {
         "title":"Peace Lily",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Peace-Lily-by-George-Middleton.jpg",
         "thumb-filename": "Peace-Lily-by-George-Middleton-Thumb.jpg",
@@ -528,7 +479,6 @@
     },
     {
         "title":"Vanilla Orchid",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Vanilla-Orchid-by-George-Middleton.jpg",
         "thumb-filename": "Vanilla-Orchid-by-George-Middleton-Thumb.jpg",
@@ -539,7 +489,6 @@
     },
     {
         "title":"Rasberries",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Rasberries-by-George-Middleton.jpg",
         "thumb-filename": "Rasberries-by-George-Middleton-Thumb.jpg",
@@ -550,7 +499,6 @@
     },
     {
         "title":"White Roses",
-        "include":true,
         "category":"illustrations",
         "full-filename": "White-Roses-by-George-Middleton.jpg",
         "thumb-filename": "White-Roses-by-George-Middleton-Thumb.jpg",
@@ -561,7 +509,6 @@
     },
     {
         "title":"Lavender",
-        "include":true,
         "category":"illustrations",
         "full-filename": "Lavender-by-George-Middleton.jpg",
         "thumb-filename": "Lavender-by-George-Middleton-Thumb.jpg",
