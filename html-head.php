@@ -111,7 +111,7 @@
 	img.full {
 		border: solid 1px #efefef;
 		/*width: 800px;*/
-		max-width: 800px;
+		/*max-width: 800px;*/
 	}
 
 	#thumb-nav {
