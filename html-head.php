@@ -50,7 +50,8 @@
 	}
 
 	#header {
-		background-color: #444444;
+		/*background-color: #444444;*/
+		background-color: #666666;
 		padding-top: 3em;
 		padding-bottom: 0.2em;
 		/*margin-top: 0.5em;*/
@@ -160,6 +161,10 @@
 		position: absolute;
 		text-align: center;
 		width: 800px; /* max full size */
+	}
+
+	#nav a {
+		color: #aaaaaa;
 	}
 
 	a:link {
