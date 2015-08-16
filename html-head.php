@@ -203,7 +203,7 @@
 		text-align: center;
 	}
 
-	button.button {
+	button.button{
 		clear:both;
 		background-color: #aaa;
 		border: 0 none;
@@ -251,6 +251,35 @@
 
 	.caption a.print-available:hover {
 		background-color: #666;
+	}
+
+	a.button {
+		clear:both;
+		background-color: #aaa;
+		border: 0 none;
+		border-radius:4px;
+		color: #FFFFFF;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 15px;
+		font-weight: bold;
+		height: 32px;
+		line-height: 32px;
+		margin: -3px 0 0 10px;
+		padding: 0 22px;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: top;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	a.button:hover {
+		background-color: #666;
+	}
+
+	#mc_embed_signup form {
+		padding: 0 !important;
 	}
 
 </style>

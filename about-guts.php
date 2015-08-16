@@ -12,6 +12,6 @@
 	</p>
 
 	<p id="bio-link">
-		<a href="resume/GeorgeMiddleton.pdf">Resume.pdf</a>
+		<a href="resume/GeorgeMiddleton.pdf" class="button" target="_blank">Resume.pdf</a>
 	</p>
 </div>
