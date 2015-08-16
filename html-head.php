@@ -202,6 +202,57 @@
 		margin-top: 3em;
 		text-align: center;
 	}
+
+	button.button {
+		clear:both;
+		background-color: #aaa;
+		border: 0 none;
+		border-radius:4px;
+		color: #FFFFFF;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		height: 20px;
+		line-height: 20px;
+		margin: -3px 0 0 10px;
+		padding: 0 22px;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: top;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	button.button:hover {
+		background-color: #666;
+	}
+
+	.caption a.print-available {
+		clear:both;
+		background-color: #aaa;
+		border: 0 none;
+		border-radius:4px;
+		color: #FFFFFF;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		height: 20px;
+		line-height: 20px;
+		margin: -3px 0 0 10px;
+		padding: 0 22px;
+		text-align: center;
+		text-decoration: none;
+		vertical-align: top;
+		white-space: nowrap;
+		width: auto;
+	}
+
+	.caption a.print-available:hover {
+		background-color: #666;
+	}
+
 </style>
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <!-- 

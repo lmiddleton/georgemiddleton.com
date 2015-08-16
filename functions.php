@@ -333,12 +333,12 @@
 			for($j = 0; $j < $len; ++$j) {
 				if($paintings[$j]["category"] == "prints" && $paintings[$j]["title"] == $paintings[$i]["title"]) {
 					// TODO: should factor out building the href for a full size image
-					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"];
+					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"] . "\"";
 					break;
 				}
 			}
 
-			$caption .=  "&nbsp&nbsp&nbsp<a href=" . $print_href . ">" . $paintings[$i]["print"] . "</a>";
+			$caption .=  "&nbsp&nbsp&nbsp<a href=" . $print_href . " class=\"print-available\"" . ">" . $paintings[$i]["print"] . "</a>";
 		}
 		// close the tag
 		$caption .= "</div>";
