@@ -41,12 +41,13 @@
 	#container {
 		background-color: white;
 		/*height: 685px;*/	/* MCA height */
-		min-height: 700px;
+		/*min-height: 700px;*/
 		margin: auto;	/* center MCA horizontally */
 		position: relative;
 		width: 1028px;	/* MCA width */
 		padding-bottom: 15px; /* footer height */
 		margin-top: 2.5em;
+		overflow: auto;
 	}
 
 	#header {
@@ -153,14 +154,15 @@
 
 	#footer {
 		/*background-color: orange;*/
-		bottom: 0;
+		/*bottom: 0;*/
 		color: #828992;
 		font-size: 0.7em;
 		height: 15px;
-		clear: both;
-		position: absolute;
+		/*position: absolute;*/
+		padding-top: 1em;
 		text-align: center;
 		width: 800px; /* max full size */
+		clear: both;
 	}
 
 	#nav a {
