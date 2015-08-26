@@ -109,7 +109,7 @@
 	}
 
 	img.full {
-		border: solid 1px #efefef;
+		border: solid 1px #D3D3D3;
 		/*width: 800px;*/
 		/*max-width: 800px;*/
 	}
