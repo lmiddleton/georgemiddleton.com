@@ -27,7 +27,7 @@
 		float: right;
 		/*right: 0;*/
 		/*top: 0px;*/
-		margin-right: 1em;
+		margin-right: 0.1em;
 	}
 
 	strong {

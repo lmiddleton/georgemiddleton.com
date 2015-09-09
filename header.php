@@ -15,8 +15,7 @@
 		<a href="https://www.facebook.com/pages/George-Middleton-Artist/320877231266484?ref=aymt_homepage_panel" target="_blank" class="img" title="Facebook"><img src="assets/facebook-16.png" alt="Facebook" /></a>
 		<a href="http://gmiddletonart.tumblr.com/" target="_blank" class="img" title="Tumblr"><img src="assets/tumblr-16.png" alt="Tumblr" /></a>
 		<a href="http://www.pinterest.com/gmiddletonart/" target="_blank" class="img" title="Pinterest"><img src="assets/pinterest-16.png" alt="Pinterest" /></a>
-		
-		<!-- <a href="http://www.instagram.com/gmiddletonart" target="_blank" class="img"><img src="assets/InstaG15.gif" alt="Instagram" /></a> -->
+		<a href="http://www.instagram.com/gmiddletonart" target="_blank" class="img" title="Instagram"><img src="assets/instagram-16.png" alt="Instagram" /></a>
 
 		<!--
 		<a href="https://plus.google.com/112853349605560241157/about" target="blank" class="img"><img src="assets/GP15.gif" alt="Google Plus" /></a>
