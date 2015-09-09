@@ -1,4 +1,3 @@
-
 <div id="img-parent">
 	<?php echo $this->full_image;?>
 </div>

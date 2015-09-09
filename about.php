@@ -7,8 +7,12 @@ $tpl = new Savant3();
 // specify the file containing the page guts to show
 $file = "about-guts.php";
 
+// specify page category
+$category = "about";
+
 // Assign values to the Savant instance.
 $tpl->file = $file;
+$tpl->category = $category;
 
 // Display a template using the assigned values.
 $tpl->display('templates/page.tpl.php');
