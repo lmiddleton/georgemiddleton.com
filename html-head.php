@@ -118,7 +118,7 @@
 		/*background-color: green;*/
 		font-size: 0.8em;
 		text-align: center;
-		margin-top: -1.5em;
+		/*margin-top: -1.5em;*/
 		margin-bottom: 0.5em;
 		/*width: 800px;*/ /* max full size */
 	}
