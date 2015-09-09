@@ -1,14 +1,18 @@
 <div class="text-container">
 	<p>
-		I grew up in an idyllic country setting, surrounded by woods, fields, and a river in the back yard. My youthful obsession was bird watching, and all my early paintings were bird portraits. I learned the basics of watercolor from my mother; we were an artistic family, always tramping about, collecting specimens to sketch. Drawing and painting became the natural expression for this joyful existence.
+		Like most children, I marveled at the endless variety of living things, and the ever-changing patterns of the elements. My heart was often filled with the beauty of this earth, and over time, I became convinced there must be a grand design behind creation; the workings of something vast and mysterious beyond the appearance of things.
 	</p>
 
 	<p>
-		With the exaltation of my childhood, my constant feeling was- there must be some hidden intelligent force behind this beautiful Life. I wanted to paint this feeling. Later on, I came under the spell of various alternative spiritual ideas and visionary artists, and together with an abiding love of nature, the main direction of my painting was influenced and set in this fashion.
+		It was an inspiring challenge to try to illustrate this feeling. I wanted to demonstrate these sensations as vital and real, and yet apart from the life of our everyday concerns. Thus, it was a natural impulse to begin by painting the landscape of dreams and visions- to make visible a magical space existing outside of time.
 	</p>
 
 	<p>
-		As I see it, my work is about the invisible connection we have with that force. The basic emphasis is to treat the figure as fluid, receptive energy engaged in ritual concert with the elements. I imagine this as an experience where the sense of personal separation is relaxed and transformed by a ceremonial interaction with the living landscape. And thus, contact with the primal source becomes possible- and with it, a renewal of vitality, clarity, peace, and harmony.
+		For me, the story of these images is meant to suggest a liberation from the boundaries of the physical, to a new perception of nature. Alone, in an environment uncharted and yet somehow familiar, the actors in these dramas encounter a world filled with the possibilities of a vibrant and fluid energy. They are intended as portraits of the inner life associated with an adventure into the unknown.
+	</p>
+
+	<p>
+		I think, in a basic way, these paintings not only represent my own experience, but are also interpretations of a larger historical theme: the quest for insight and illumination. My intention is to symbolize this transformation, which is perhaps the result of a simple commerce between nature and the longings of the human spirit. In the end, I hope to suggest the influence of this fleeting  moment, where the darkness is revealed as light, and the heart is filled with wonder.
 	</p>
 
 	<p id="bio-link">
