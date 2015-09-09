@@ -4,8 +4,8 @@
 	</p>
 	<p style="text-align: center;">
 		George Middleton Art Studio<br />
-		PO Box 626<br />
-		Carlisle, MA 01741<br />
+		160 Western Avenue Unit 109<br />
+		Lowell, MA 01851<br />
 		(508) 254-5489
 	</p>
 	
