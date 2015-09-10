@@ -28,6 +28,7 @@
 		/*right: 0;*/
 		/*top: 0px;*/
 		margin-right: 0.1em;
+		margin-top: -0.5em;
 	}
 
 	strong {

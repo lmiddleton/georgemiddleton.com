@@ -272,6 +272,70 @@
 		}
     }
 
+    // build the core cuts of an image caption (without buttons/links)
+    function build_caption_guts($paintings, $i) {
+    	$caption = "";
+    	// add the non-optional elements
+		$caption .= "<span class='title'>" . $paintings[$i]["title"] . "</span>" . "&nbsp&nbsp&nbsp" . $paintings[$i]["medium"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["size"] . "&nbsp&nbsp&nbsp" . "&copy;" . $paintings[$i]["date"];
+		// check for optional elements
+		if (array_key_exists("edition", $paintings[$i])) {
+			// add edition if it exists
+			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["edition"];
+		}
+		if (array_key_exists("for", $paintings[$i])) {
+			// add for if it exists
+			$caption .= "&nbsp&nbsp&nbsp" . $paintings[$i]["for"];
+		}
+		if (array_key_exists("price", $paintings[$i])) {
+			// add price if it exists
+			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["price"];
+		}
+		return $caption;
+    }
+
+    // builds caption for full size image
+    function build_caption($paintings, $i)
+    {
+    	// build the caption
+		$caption = "<div class='caption'>";
+		
+		$caption_guts = build_caption_guts($paintings, $i);
+		$caption .= $caption_guts;
+
+		if (array_key_exists("buy-now-code-filename", $paintings[$i])) {
+			//// build file name
+			//$filename = "buy-now-code/" . $paintings[$i]["buy-now-code-filename"];
+			//// read in code from file
+			//$code = file_get_contents($filename);
+			//// add it to the caption
+			//$caption .= $code;
+
+			// build buy now button form and add it to the caption
+			$button = "<form action='buy-now.php' method='get'><input type='hidden' name='paintingIndex' value='" . $i . "' /><button type='submit' class='button'>Buy Now</button></form>";
+			$caption .=$button;
+		}
+		if (array_key_exists("print", $paintings[$i])) {
+			// add print available link if it exists
+			// find the corresponding print with the same name
+			// count number of painting arrays
+			$len = count($paintings);
+			$print_href = "";
+			for($j = 0; $j < $len; ++$j) {
+				if($paintings[$j]["category"] == "prints" && $paintings[$j]["title"] == $paintings[$i]["title"]) {
+					// TODO: should factor out building the href for a full size image
+					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"];
+					break;
+				}
+			}
+
+			$caption .=  "&nbsp&nbsp&nbsp<a href=\"" . $print_href . "\"" . " class=\"print-available\"" . ">" . $paintings[$i]["print"] . "</a>";
+		}
+		// close the tag
+		$caption .= "</div>";
+		// return the caption
+		return $caption;
+    }
+
     // builds and returns html for full size images and captions
     function build_full($paintings, $i, $next_image, $category)
     {
@@ -298,51 +362,10 @@
 
     	// render the fullsize image
 		$full .= "<a href=" . $href . "><img src=" . $src . "alt=" . $alt . "class=" . $class . " /></a>";
+		
 		// build the caption
-		$caption = "<div class='caption'>";
-		// add the non-optional elements
-		$caption .= "<span class='title'>" . $paintings[$i]["title"] . "</span>" . "&nbsp&nbsp&nbsp" . $paintings[$i]["medium"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["size"] . "&nbsp&nbsp&nbsp" . "&copy;" . $paintings[$i]["date"];
-		// check for optional elements
-		if (array_key_exists("edition", $paintings[$i])) {
-			// add edition if it exists
-			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["edition"];
-		}
-		if (array_key_exists("for", $paintings[$i])) {
-			// add for if it exists
-			$caption .= "&nbsp&nbsp&nbsp" . $paintings[$i]["for"];
-		}
-		if (array_key_exists("price", $paintings[$i])) {
-			// add price if it exists
-			$caption .=  "&nbsp&nbsp&nbsp" . $paintings[$i]["price"];
-		}
-		if (array_key_exists("buy-now-code-filename", $paintings[$i])) {
-			// build file name
-			$filename = "buy-now-code/" . $paintings[$i]["buy-now-code-filename"];
-			// read in code from file
-			$code = file_get_contents($filename);
-			//echo $code;
-			// add it to the caption
-			$caption .= $code;
-		}
-		if (array_key_exists("print", $paintings[$i])) {
-			// add print available link if it exists
-			// find the corresponding print with the same name
-			// count number of painting arrays
-			$len = count($paintings);
-			$print_href = "";
-			for($j = 0; $j < $len; ++$j) {
-				if($paintings[$j]["category"] == "prints" && $paintings[$j]["title"] == $paintings[$i]["title"]) {
-					// TODO: should factor out building the href for a full size image
-					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"];
-					break;
-				}
-			}
+		$caption = build_caption($paintings, $i);
 
-			$caption .=  "&nbsp&nbsp&nbsp<a href=\"" . $print_href . "\"" . " class=\"print-available\"" . ">" . $paintings[$i]["print"] . "</a>";
-		}
-		// close the tag
-		$caption .= "</div>";
-		// render the caption
 		$full .= $caption;
 
 		return $full;
