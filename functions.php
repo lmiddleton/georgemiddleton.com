@@ -301,7 +301,7 @@
 		// build the caption
 		$caption = "<div class='caption'>";
 		// add the non-optional elements
-		$caption .= "<span class='title'>" . $paintings[$i]["title"] . "</span>" . "&nbsp&nbsp&nbsp" . $paintings[$i]["medium"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["size"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["date"];
+		$caption .= "<span class='title'>" . $paintings[$i]["title"] . "</span>" . "&nbsp&nbsp&nbsp" . $paintings[$i]["medium"] . "&nbsp&nbsp&nbsp" . $paintings[$i]["size"] . "&nbsp&nbsp&nbsp" . "&copy;" . $paintings[$i]["date"];
 		// check for optional elements
 		if (array_key_exists("edition", $paintings[$i])) {
 			// add edition if it exists

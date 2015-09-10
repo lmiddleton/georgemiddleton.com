@@ -19,3 +19,6 @@
 		<a href="resume/GeorgeMiddleton.pdf" class="button" target="_blank">Resume.pdf</a>
 	</p>
 </div>
+<div id="footer">
+	<?php include 'footer.php';?>
+</div>

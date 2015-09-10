@@ -190,7 +190,7 @@
 		/*position: absolute;*/
 		padding-top: 1em;
 		text-align: center;
-		width: 800px; /* max full size */
+		width: 900px; /* text-container width */
 		clear: both;
 	}
 

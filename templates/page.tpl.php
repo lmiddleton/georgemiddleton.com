@@ -13,9 +13,6 @@
 	</div>
 	<div id="container">
 			<?php include $this->file;?>
-		<div id="footer">
-			<?php include 'footer.php';?>
-		</div>
 	</div>
 </body>
 </html>
