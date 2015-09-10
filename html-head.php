@@ -177,6 +177,10 @@
 		width: 900px; /* max full size */
 	}
 
+	.text-container a {
+		text-decoration: underline !important;
+	}
+
 	#footer {
 		/*background-color: orange;*/
 		/*bottom: 0;*/
