@@ -4,6 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style>
 	body {
 		/*font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
@@ -178,8 +179,9 @@
 		width: 900px; /* max full size */
 	}
 
-	.text-container a {
+	.text-container a.email {
 		text-decoration: underline !important;
+		color: #6a6a6a !important;
 	}
 
 	#footer {
@@ -319,8 +321,11 @@
 		padding: 0 !important;
 	}
 
+	#mc_embed_signup .button {
+		margin: 0 0 0 0 !important;
+	}
+
 </style>
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <!-- 
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
