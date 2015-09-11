@@ -15,6 +15,10 @@
 		</div>
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
 			<div style="background-color: #F7F7F7; padding: 1em;">
+				<p style="margin-bottom: 0;">
+					Please feel free to contact me directly for any reason including painting purchase inquiries, for commissioned work and illustration projects, for licensing of available work, and for discounts on orders of two or more prints.
+				</p>
+				<hr style="margin-top: 1.5em; margin-bottom: 1.5em;" />
 				<p>
 					For advanced notice of new work and exhibits, please subscribe to my studio newsletter:
 				</p>
