@@ -19,8 +19,20 @@ $full_filename = $paintings[$paintingIndex]["full-filename"];
 // get the painting's title
 $title = $paintings[$paintingIndex]["title"];
 
+// get the painting's medium
+$medium = $paintings[$paintingIndex]["medium"];
+
+// get the painting's size
+$size = $paintings[$paintingIndex]["size"];
+
+// get the painting's edition
+$edition = $paintings[$paintingIndex]["edition"];
+
+// get the painting's price
+$price = $paintings[$paintingIndex]["price"];
+
 // build the caption
-$caption = build_caption_guts($paintings, $paintingIndex);
+//$caption = build_caption_guts($paintings, $paintingIndex);
 
 // build file name
 $filename = "buy-now-code/" . $paintings[$paintingIndex]["buy-now-code-filename"];
@@ -38,7 +50,11 @@ $tpl->file = $file;
 $tpl->category = $category;
 $tpl->full_filename = $full_filename;
 $tpl->title = $title;
-$tpl->caption = $caption;
+$tpl->medium = $medium;
+$tpl->size = $size;
+$tpl->edition = $edition;
+$tpl->price = $price;
+//$tpl->caption = $caption;
 $tpl->paypalCode = $paypalCode;
 
 // Display a template using the assigned values.

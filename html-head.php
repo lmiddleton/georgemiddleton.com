@@ -326,6 +326,10 @@
 		margin: 0 0 0 0 !important;
 	}
 
+	div.paypal button {
+		margin: 0;
+	}
+
 </style>
 <!-- 
 <style type="text/css">
