@@ -7,7 +7,7 @@ require_once 'Savant3-3.0.1/Savant3-3.0.1/Savant3.php';
 $tpl = new Savant3();
 
 // specify the image category
-$category = "current";
+$category = "paintings";
 
 load_image_page($category, $tpl);
 

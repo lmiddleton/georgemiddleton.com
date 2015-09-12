@@ -1,4 +1,4 @@
 <?php
 // redirect to current work
-header ('Location: current.php');
+header ('Location: paintings.php');
 ?>
