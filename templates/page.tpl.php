@@ -6,6 +6,7 @@
 	<?php include 'html-head.php';?>
 </head>
 <body>
+	<?php include_once("analyticstracking.php") ?>
 	<div id="header">
 		<div id="header-guts">
 			<?php include 'header.php';?>
