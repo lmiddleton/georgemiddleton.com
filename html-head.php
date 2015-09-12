@@ -126,7 +126,8 @@
 	}
 
 	#ss-controls a {
-		margin-right: 0.5em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 
 	#img-parent {
