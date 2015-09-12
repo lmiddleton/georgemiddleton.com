@@ -60,7 +60,7 @@
         "size":"10.25\" x 14\"",
         "date":"1997",
         "price":"$325",
-        "print": "print available"
+        "print": "Print Available"
     },
     {   "title":"And They Came From The Sea",
         "category":"current",
@@ -70,7 +70,7 @@
         "size":"7.5\" x 11\"",
         "date":"2011",
         "price":"$325",
-        "print": "print available"
+        "print": "Print Available"
     },
     {   "title":"Tracker",
         "category":"current",
@@ -404,7 +404,7 @@
         "size": "12\" x 16\"",
         "date": "2009",
         "for": "for Scottie's Tissues",
-        "print": "print available"
+        "print": "Print Available"
     },
     {
         "title":"Majesta Blossoms",

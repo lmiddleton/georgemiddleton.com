@@ -4,6 +4,7 @@
 			<div style="text-align: left; font-size: 1.1em;">
 				<p style="margin-bottom: 2.5em !important; line-height: 1.7em;">
 					<span style="font-weight: bold; font-size: 1.2em;">George Middleton Art Studio</span><br />
+					Western Avenue Studios and Lofts<br />
 					160 Western Avenue Unit 109<br />
 					Lowell, MA 01851<br />
 					(508) 254-5489
@@ -15,8 +16,11 @@
 		</div>
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
 			<div style="background-color: #F7F7F7; padding: 1em;">
+				<p>
+					Please feel free to contact me directly about purchase inquiries, commissioned work, illustration projects, licensing, and for discounts on orders of two or more prints.
+				</p>
 				<p style="margin-bottom: 0;">
-					Please feel free to contact me directly for any reason including painting purchase inquiries, for commissioned work and illustration projects, for licensing of available work, and for discounts on orders of two or more prints.
+					George Middleton Art Studio is open to visitors the first Saturday of every month. See more information about Western Avenue Open Studios <a href="http://westernavenuestudios.com/calendar/monthly-open-studios/" target="_blank">here</a>.
 				</p>
 				<hr style="margin-top: 1.5em; margin-bottom: 1.5em;" />
 				<p>
