@@ -397,7 +397,9 @@
     	// we are at the first image
     	// need to figure out how to wrap around
     	else {
+    		// build href that will go to the end of the category
     		$href = "";
+    		$href .= $category . ".php?image=";	// this goes to the beginning though
     	}
     	// render it
     	echo "href=" . $href . "";
