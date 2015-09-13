@@ -1,8 +1,8 @@
 <div class="text-container" style="width: 100%;">
 	<div style="display: table; width: 100%;">
-		<div style="display: table-cell; width: 50%; text-align: left; padding-right: 3em; padding-left: 3em;">
+		<div style="display: table-cell; width: 50%; text-align: center; padding-right: 3em; padding-left: 3em;">
 			<img src="images/full/<?php echo $this->full_filename;?>" alt="<?php echo $this->title;?>" class="full" style="width: 400px;" />
-			<div class="caption" style="text-align: left; width: 400px; line-height: 1.7em; font-size: 0.9em;">
+			<div class="caption" style="text-align: left; line-height: 1.7em; font-size: 0.9em; display: inline-block;">
 				<span class="title"><?php echo $this->title;?></span><br />
 				<?php echo $this->medium;?><br />
 				<?php echo $this->size;?>, <?php echo $this->price;?>
