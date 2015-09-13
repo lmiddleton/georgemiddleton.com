@@ -1,15 +1,20 @@
 <div class="text-container" >
 	<div style="display: table; width: 100%;">
 		<div style="display: table-cell; width: 50%; text-align: center; padding-right: 3em; padding-left: 3em;">
-			<div style="text-align: left; font-size: 1.1em;">
-				<p style="margin-bottom: 2.5em !important; line-height: 1.7em;">
+			<div style="text-align: left;">
+				<p>
+					My studio is located in the Western Avenue Artists Studios and Lofts:
+				</p>
+				<p style="margin-bottom: 2.5em !important; line-height: 1.7em; font-size: 1.1em;">
 					<span style="font-weight: bold; font-size: 1.2em;">George Middleton Art Studio</span><br />
-					Western Avenue Studios and Lofts<br />
+					<!-- Western Avenue Studios and Lofts<br /> -->
 					160 Western Avenue Unit 109<br />
-					Lowell, MA 01851<br />
+					Lowell, MA 01851
+				</p>
+				<p style="font-size: 1.1em;">
 					(508) 254-5489
 				</p>
-				<p>
+				<p style="font-size: 1.1em;">
 					<a href="mailto:info@georgemiddleton.com" class="email">info@georgemiddleton.com</a>
 				</p>
 			</div>
