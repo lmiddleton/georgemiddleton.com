@@ -4,8 +4,8 @@
 			<img src="images/full/<?php echo $this->full_filename;?>" alt="<?php echo $this->title;?>" class="full" style="width: 400px;" />
 			<div class="caption" style="text-align: left; width: 400px; line-height: 1.7em; font-size: 0.9em;">
 				<span class="title"><?php echo $this->title;?></span><br />
-				<?php echo $this->medium;?>, <?php echo $this->size;?>, <?php echo $this->edition;?><br />
-				<?php echo $this->price;?>
+				<?php echo $this->medium;?><br />
+				<?php echo $this->size;?>, <?php echo $this->price;?>
 			</div>
 		</div>
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
