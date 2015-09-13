@@ -1,7 +1,7 @@
 <h1>GEORGE MIDDLETON</h1>
 
 <div id="nav">
-	<a href="current.php" class='<?=($this->category == "current") ? "active" : "";?>'>Paintings</a>
+	<a href="paintings.php" class='<?=($this->category == "paintings") ? "active" : "";?>'>Paintings</a>
 	<img src="assets/Divider.gif" alt="" class="divider" />
 	<a href="prints.php" class='<?=($this->category == "prints") ? "active" : "";?>'>Prints</a>
 	<img src="assets/Divider.gif" alt="" class="divider" />
