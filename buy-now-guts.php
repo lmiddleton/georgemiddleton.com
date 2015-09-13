@@ -11,15 +11,11 @@
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
 			<div style="background-color: #F7F7F7; padding: 1em;">
 				<p>
-					Inkjet prints are made with archival pigment inks and papers, are hand-signed, numbered, and dated, and include a certificate of authenticity.
+					My inkjet prints are made with the highest quality archival pigment inks, papers, or canvas. They are hand-signed, numbered, and dated, and include a certificate of authenticity.
 				</p>
 
 				<p>
-					Please contact me directly for a discount on orders of two or more prints. Payment is through PayPal. Massachusetts customers add 6.25% sales tax.
-				</p>
-
-				<p>
-					Shipping is included and via USPS. Please allow two weeks to receive your order.
+					Please contact me directly for a discount on orders of two or more prints. Payment is through PayPal. Massachusetts customers add 6.25% sales tax. Shipping is included and via USPS. Please allow two weeks to receive your order.
 				</p>
 
 				<p>
