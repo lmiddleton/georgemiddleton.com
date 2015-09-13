@@ -21,7 +21,7 @@
 				<p>
 					If you are dissatisfied for any reason with your purchase, you may return the work within 14 days for a full refund.
 				</p>
-				<div class="paypal"><?php echo $this->paypalCode;?></div>
+				<div class="paypal" style="text-align: center;"><?php echo $this->paypalCode;?></div>
 			</div>
 		</div>
 	</div>
