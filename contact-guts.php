@@ -25,7 +25,7 @@
 					Please feel free to contact me directly about purchase inquiries, commissioned work, illustration projects, licensing, and for discounts on orders of two or more prints.
 				</p>
 				<p style="margin-bottom: 0;">
-					George Middleton Art Studio is open to visitors the first Saturday of every month. See more information about Western Avenue Open Studios <a href="http://westernavenuestudios.com/calendar/monthly-open-studios/" target="_blank">here</a>.
+					George Middleton Art Studio is open to visitors the first Saturday of every month. See more information about Western Avenue Open Studios <a href="http://westernavenuestudios.com/calendar/monthly-open-studios/" target="_blank" style="text-decoration: underline; font-weight: bold;">here</a>.
 				</p>
 				<hr style="margin-top: 1.5em; margin-bottom: 1.5em;" />
 				<p>
