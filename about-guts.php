@@ -1,4 +1,4 @@
-<div class="text-container" style="margin-left: 4em; margin-right: 4em;">
+<div class="text-container" style="width: 800px; margin: 0 auto;">
 	<p>
 		Like most children, I marveled at the endless variety of living things, and the ever-changing patterns of the elements. My heart was often filled with the beauty of this earth, and over time, I became convinced there must be a grand design behind creation; the workings of something vast and mysterious beyond the appearance of things.
 	</p>
@@ -19,6 +19,6 @@
 		<a href="resume/GeorgeMiddleton.pdf" class="button" target="_blank">Resume.pdf</a>
 	</p>
 </div>
-<div id="footer" style="margin-left: 4em; margin-right: 4em;">
+<div id="footer" style="width: 800px; margin: 0 auto;">
 	<?php include 'footer.php';?>
 </div>
