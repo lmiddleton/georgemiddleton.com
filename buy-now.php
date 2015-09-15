@@ -28,6 +28,9 @@ $size = $paintings[$paintingIndex]["size"];
 // get the painting's edition
 $edition = $paintings[$paintingIndex]["edition"];
 
+// get the painting's date
+$date = $paintings[$paintingIndex]["date"];
+
 // get the painting's price
 $price = $paintings[$paintingIndex]["price"];
 
@@ -53,6 +56,7 @@ $tpl->title = $title;
 $tpl->medium = $medium;
 $tpl->size = $size;
 $tpl->edition = $edition;
+$tpl->date = $date;
 $tpl->price = $price;
 //$tpl->caption = $caption;
 $tpl->paypalCode = $paypalCode;
