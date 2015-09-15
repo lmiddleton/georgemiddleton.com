@@ -3,7 +3,7 @@
 		<div style="display: table-cell; width: 50%; text-align: center; padding-right: 3em; padding-left: 3em;">
 			<div style="text-align: left;">
 				<p>
-					My studio is located in the Western Avenue Artists Studios and Lofts:
+					My studio is located in the <a href="http://westernavenuestudios.com/" target="_blank" style="text-decoration: underline;">Western Avenue Lofts</a>, an artist live/work studio building in Lowell, Massachusetts:
 				</p>
 				<p style="margin-bottom: 2.5em !important; line-height: 1.7em; font-size: 1.1em;">
 					<span style="font-weight: bold; font-size: 1.2em;">George Middleton Art Studio</span><br />
@@ -25,7 +25,7 @@
 					Please feel free to contact me directly about purchase inquiries, commissioned work, illustration projects, licensing, and for discounts on orders of two or more prints.
 				</p>
 				<p style="margin-bottom: 0;">
-					George Middleton Art Studio is open to visitors the first Saturday of every month. See more information about Western Avenue Open Studios <a href="http://westernavenuestudios.com/calendar/monthly-open-studios/" target="_blank" style="text-decoration: underline; font-weight: bold;">here</a>.
+					My studio is open for visitors most first Saturdays of every month, and by appointment. See more information about Western Avenue Open Studios <a href="http://westernavenuestudios.com/calendar/monthly-open-studios/" target="_blank" style="text-decoration: underline;">here</a>.
 				</p>
 				<hr style="margin-top: 1.5em; margin-bottom: 1.5em;" />
 				<p>
