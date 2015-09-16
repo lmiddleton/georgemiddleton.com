@@ -3,8 +3,8 @@
 		<div style="display: table-cell; width: 50%; text-align: left; padding-right: 3em; padding-left: 3em;">
 			<img src="images/full/<?php echo $this->full_filename;?>" alt="<?php echo $this->title;?>" class="full" style="width: 100%;" />
 			<div class="caption" style="text-align: center; line-height: 1.7em; font-size: 0.9em;">
-				<span class="title"><?php echo $this->title;?></span>, <?php echo $this->medium;?>, <?php echo $this->size;?><br />
-				&copy;<?php echo $this->date;?>, <?php echo $this->edition;?>, <?php echo $this->price;?>
+				<span class="title"><?php echo $this->title;?></span>&nbsp&nbsp&nbsp<?php echo $this->medium;?>&nbsp&nbsp&nbsp<?php echo $this->size;?><br />
+				&copy;<?php echo $this->date;?>&nbsp&nbsp&nbsp<?php echo $this->edition;?>&nbsp&nbsp&nbsp<?php echo $this->price;?>
 			</div>
 		</div>
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
