@@ -16,12 +16,5 @@
 		<a href="http://gmiddletonart.tumblr.com/" target="_blank" class="img" title="Tumblr"><img src="assets/tumblr-16.png" alt="Tumblr" /></a>
 		<a href="http://www.pinterest.com/gmiddletonart/" target="_blank" class="img" title="Pinterest"><img src="assets/pinterest-16.png" alt="Pinterest" /></a>
 		<a href="http://www.instagram.com/gmiddletonart" target="_blank" class="img" title="Instagram"><img src="assets/instagram-16.png" alt="Instagram" /></a>
-
-		<!--
-		<a href="https://plus.google.com/112853349605560241157/about" target="blank" class="img"><img src="assets/GP15.gif" alt="Google Plus" /></a>
-		
-		
-		<a href="" target="_blank" class="img"><img src="assets/LinkedIn15.gif" alt="LinkedIn" /></a>
-	-->
 	</div>
 </div>

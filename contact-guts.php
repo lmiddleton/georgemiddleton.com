@@ -17,6 +17,15 @@
 				<p style="font-size: 1.1em;">
 					<a href="mailto:info@georgemiddleton.com" class="email">info@georgemiddleton.com</a>
 				</p>
+				<p>
+					You can also connect with me on social media:
+					<ul style="line-height: 1.5em; margin-top: -2em;">
+						<li><a href="https://www.facebook.com/pages/George-Middleton-Artist/320877231266484?ref=aymt_homepage_panel" target="_blank" style="text-decoration: underline;">Facebook</a></li>
+						<li><a href="http://gmiddletonart.tumblr.com/" target="_blank" style="text-decoration: underline;">Tumblr</a></li>
+						<li><a href="http://www.pinterest.com/gmiddletonart/" target="_blank" style="text-decoration: underline;">Pinterest</a></li>
+						<li><a href="http://www.instagram.com/gmiddletonart" target="_blank" style="text-decoration: underline;">Instagram</a></li>
+					</ul>
+				</p>
 			</div>
 		</div>
 		<div style="display: table-cell; width: 50%; text-align: left; vertical-align: top;">
