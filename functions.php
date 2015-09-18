@@ -325,13 +325,16 @@
 		if (array_key_exists("print", $paintings[$i])) {
 			// add print available link if it exists
 			// find the corresponding print with the same name
+
+			// get the prints array
+			$prints_array = get_paintings("prints");
 			// count number of painting arrays
-			$len = count($paintings);
+			$len = count($prints_array);
 			$print_href = "";
 			for($j = 0; $j < $len; ++$j) {
-				if($paintings[$j]["category"] == "prints" && $paintings[$j]["clean-title"] == $paintings[$i]["clean-title"]) {
+				if($prints_array[$j]["clean-title"] == $paintings[$i]["clean-title"]) {
 					// TODO: should factor out building the href for a full size image
-					$print_href .= "prints" . ".php?image=" . $paintings[$j]["clean-title"];
+					$print_href .= "prints" . ".php?image=" . $prints_array[$j]["clean-title"];
 					break;
 				}
 			}
