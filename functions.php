@@ -51,8 +51,26 @@
     {
     	// read in the contents of the json file as a string
 		$json = file_get_contents("paintings.json");
-		// parse the json string into php array and return
-		return json_decode($json, true);
+		// parse the json string into php array
+		$json_parse = json_decode($json, true);
+		// create url safe painting name
+
+		// count number of painting arrays
+		$len = count($json_parse);
+		// iterate over painting arrays
+		for($i = 0; $i < $len; ++$i) {
+			$clean_title = cleanPaintingName($json_parse[$i]["title"]);
+			$json_parse[$i]["clean-title"] = $clean_title;
+		}
+
+		return $json_parse;
+    }
+
+    function cleanPaintingName($string)
+    {
+    	$string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+
+   		return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
     }
 
     // finds the returns the image that should be displayed
@@ -75,7 +93,7 @@
 			for($i = 0; $i < $len; ++$i) {
 				// set image to first painting that belongs in the category
 				if($paintings[$i]["category"] == $category) {
-					$image = $paintings[$i]["title"];
+					$image = $paintings[$i]["clean-title"];
 					return; // stop looking
 				}
 			}
@@ -114,7 +132,7 @@
 					}
 				}
 				// else when we find the current image...
-				else if($paintings[$i]["title"] == $current_image) {
+				else if($paintings[$i]["clean-title"] == $current_image) {
 					// we can start looking for the next image in that category
 					// figure out how many more we need to look through
 					$to_go = $len - $i;
@@ -165,7 +183,7 @@
 					}
 				}
 				// else when we find the current image...
-				else if($paintings[$i]["title"] == $current_image) {
+				else if($paintings[$i]["clean-title"] == $current_image) {
 					// we can start looking for the next image in that category
 					// figure out how many more we need to look through
 					$to_go = $len - $i;
@@ -217,7 +235,7 @@
 				else {
 					// if the painting is the current fullsize, give it a border
 					$class = "class='thumb";
-					if($paintings[$i]["title"] == $image) {
+					if($paintings[$i]["clean-title"] == $image) {
 						$class .= " active-thumb'";
 					}
 					else {
@@ -264,7 +282,7 @@
 		else {
 			// iterate over painting arrays to find and render the image with the specified title and category
 			for($i = 0; $i < $len; ++$i) {
-				if($paintings[$i]["category"] == $category && $paintings[$i]["title"] == $image) {
+				if($paintings[$i]["category"] == $category && $paintings[$i]["clean-title"] == $image) {
 					$full_image .= build_full($paintings, $i, $next_image, $category);
 					return $full_image;
 				}
@@ -321,9 +339,9 @@
 			$len = count($paintings);
 			$print_href = "";
 			for($j = 0; $j < $len; ++$j) {
-				if($paintings[$j]["category"] == "prints" && $paintings[$j]["title"] == $paintings[$i]["title"]) {
+				if($paintings[$j]["category"] == "prints" && $paintings[$j]["clean-title"] == $paintings[$i]["clean-title"]) {
 					// TODO: should factor out building the href for a full size image
-					$print_href .= "prints" . ".php?image=" . $paintings[$j]["title"];
+					$print_href .= "prints" . ".php?image=" . $paintings[$j]["clean-title"];
 					break;
 				}
 			}
@@ -351,7 +369,7 @@
     	
     	if($next_image != "") {
 	    	// build the href attribute
-	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["clean-title"] . "\"";
     	}
     	// we are at the last image
     	else {
@@ -376,7 +394,7 @@
     {
     	if($next_image != "") {
 	    	// build the href attribute
-	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["title"] . "\"";
+	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["clean-title"] . "\"";
     	}
     	// we are at the last image
     	else {
@@ -392,7 +410,7 @@
     {
     	if($prev_image !=  "") {
     		// build the href attribute
-    		$href =  "\"" . $category . ".php?image=" . $paintings[$prev_image]["title"] . "\"";
+    		$href =  "\"" . $category . ".php?image=" . $paintings[$prev_image]["clean-title"] . "\"";
     	}
     	// we are at the first image
     	// need to figure out how to wrap around
@@ -413,7 +431,7 @@
     	// build the alt attribute
     	$alt = "\"" . $paintings[$i]["title"] . "\"";
     	// render the thumbnail image
-    	$thumb = "<a href=\"" . $category . ".php?image=" . $paintings[$i]["title"] . "\"" . $class . "><img src=" . $src . "alt=" . $alt . " /></a>";
+    	$thumb = "<a href=\"" . $category . ".php?image=" . $paintings[$i]["clean-title"] . "\"" . $class . "><img src=" . $src . "alt=" . $alt . " /></a>";
     	return $thumb;
     }
 
