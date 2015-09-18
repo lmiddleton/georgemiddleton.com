@@ -15,7 +15,7 @@
 		$file = "templates/image-page-guts.tpl.php";
 
 		// get and store the paintings
-		$paintings = get_paintings();
+		$paintings = get_paintings($category);
 
 		// find the current image that should be displayed
 		$image = get_current_image($paintings, $category);
@@ -47,7 +47,7 @@
 	}
 	
 	// returns php array of paintings JSON object
-    function get_paintings()
+    function get_paintings($category)
     {
     	// read in the contents of the json file as a string
 		$json = file_get_contents("paintings.json");
@@ -57,13 +57,79 @@
 
 		// count number of painting arrays
 		$len = count($json_parse);
+
+		// we will split the paintings into 3 new arrays based on their categories
+		$paintings_category = array();
+		$prints_category = array();
+		$illustrations_category = array();
+		
 		// iterate over painting arrays
 		for($i = 0; $i < $len; ++$i) {
+			// clean spaces, special chars, etc. out of painting title and store in a new property
 			$clean_title = cleanPaintingName($json_parse[$i]["title"]);
 			$json_parse[$i]["clean-title"] = $clean_title;
+			// move the painting into it's appropriate array
+			if($json_parse[$i]["category"] == "paintings") {
+				array_push($paintings_category, $json_parse[$i]);
+			}
+			else if($json_parse[$i]["category"] == "prints") {
+				array_push($prints_category, $json_parse[$i]);
+			}
+			else if($json_parse[$i]["category"] == "illustrations") {
+				array_push($illustrations_category, $json_parse[$i]);
+			}
 		}
 
-		return $json_parse;
+		if($category == "paintings") {
+			// process the paintings_category array to determine next and previous images
+			$processed_array = processNextPrev($paintings_category);
+
+			return $processed_array;
+		}
+		else if($category == "prints") {
+			// process the paintings_category array to determine next and previous images
+			$processed_array = processNextPrev($prints_category);
+
+			return $processed_array;
+		}
+		else if($category == "illustrations") {
+			// process the paintings_category array to determine next and previous images
+			$processed_array = processNextPrev($illustrations_category);
+			
+			return $processed_array;
+		}
+
+    }
+
+    function processNextPrev(&$array) {
+    	$len = count($array);
+		for($i = 0; $i < $len; ++$i) {
+			// for each painting, determine its "next" image
+			// if we are at the last painting, the "next" image is the first image
+			if($i + 1 >= $len) {
+				$next = $array[0]["clean-title"];
+				$array[$i]["next"] = $next;
+			}
+			// else, it's the next image in the list
+			else {
+				$next = $array[$i + 1]["clean-title"];
+				$array[$i]["next"] = $next;
+			}
+
+			// now determine its "previous" image
+			// if we are at the first painting, the "previous" image is the last image
+			if($i == 0) {
+				$prev = $array[$len - 1]["clean-title"];
+				$array[$i]["prev"] = $prev;
+			}
+			// else, it's the previous image in the list
+			else {
+				$prev = $array[$i - 1]["clean-title"];
+				$array[$i]["prev"] = $prev;
+			}
+		}
+
+		return $array;
     }
 
     function cleanPaintingName($string)
@@ -94,7 +160,7 @@
 				// set image to first painting that belongs in the category
 				if($paintings[$i]["category"] == $category) {
 					$image = $paintings[$i]["clean-title"];
-					return; // stop looking
+					return $image; // return image and stop looking
 				}
 			}
 
@@ -105,48 +171,14 @@
     // finds the "next" image after the specified image in the category
     function get_next_image($paintings, $current_image, $category)
     {
-    	// we will store the next image in this var
-    	$next_image = "";
-
 		// count number of painting arrays
 		$len = count($paintings);
 
 		// iterate over painting arrays
 		for($i = 0; $i < $len; ++$i) {
-			// check that painting belongs in current page
-			if($paintings[$i]["category"] == $category) {
-				// if no image specified...
-				if($current_image == "") {
-					// we can start looking for the next image in that category
-					// figure out how many more we need to look through
-					$to_go = $len - $i;
-					// loop through the remaining paintings
-					// start counting at 1 to skip the current painting
-					for($j = 1; $j < $to_go; $j++) {
-						// as soon as we find one in the same category
-						if($paintings[$i + $j]["category"] == $category) {
-							// store it's position in next image var
-							$next_image = $i + $j;
-							return $next_image;
-						}
-					}
-				}
-				// else when we find the current image...
-				else if($paintings[$i]["clean-title"] == $current_image) {
-					// we can start looking for the next image in that category
-					// figure out how many more we need to look through
-					$to_go = $len - $i;
-					// loop through the remaining paintings
-					// start counting at 1 to skip the current painting
-					for($j = 1; $j < $to_go; $j++) {
-						// as soon as we find one in the same category
-						if($paintings[$i + $j]["category"] == $category) {
-							// store it's position in next image var
-							$next_image = $i + $j;
-							return $next_image;
-						}
-					}
-				}
+			// find the current painting
+			if($paintings[$i]["clean-title"] == $current_image) {
+				return $paintings[$i]["next"];
 			}
 		}
     }
@@ -154,56 +186,14 @@
     // finds the "previous" image before the specified image in the category
     function get_prev_image($paintings, $current_image, $category)
     {
-    	// here we will store the previous painting in the category found
-    	$prev_image = "";
-
 		// count number of painting arrays
 		$len = count($paintings);
 
 		// iterate over painting arrays
 		for($i = 0; $i < $len; ++$i) {
-		
-			// check that painting belongs in current page
-			if($paintings[$i]["category"] == $category) {
-				// if no image specified...
-				if($current_image == "") {
-					// we can start looking for the next image in that category
-					// figure out how many more we need to look through
-					$to_go = $len - $i;
-					// loop through the remaining paintings
-					// start counting at 1 to skip the current painting
-					for($j = 1; $j < $to_go; $j++) {
-						// as soon as we find one in the same category
-						if($paintings[$i + $j]["category"] == $category) {
-							// store it's position in previous image var
-							//$prev_image = $i + $j;
-							//echo $prev_image;
-							return $prev_image;
-						}
-					}
-				}
-				// else when we find the current image...
-				else if($paintings[$i]["clean-title"] == $current_image) {
-					// we can start looking for the next image in that category
-					// figure out how many more we need to look through
-					$to_go = $len - $i;
-					// loop through the remaining paintings
-					// start counting at 1 to skip the current painting
-					for($j = 1; $j < $to_go; $j++) {
-						// as soon as we find one in the same category
-						if($paintings[$i + $j]["category"] == $category) {
-							// store it's position in previous image var
-							//$prev_image = $i + $j;
-							//print_r($prev_image);
-							return $prev_image;
-						}
-					}
-				}
-				// it's in the category but not the exact match
-				else {
-					// store it, since it might be the previous image
-					$prev_image = $i;
-				}
+			// find the current painting
+			if($paintings[$i]["clean-title"] == $current_image) {
+				return $paintings[$i]["prev"];
 			}
 		}
     }
@@ -369,7 +359,7 @@
     	
     	if($next_image != "") {
 	    	// build the href attribute
-	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["clean-title"] . "\"";
+	    	$href =  "\"" . $category . ".php?image=" . $next_image . "\"";
     	}
     	// we are at the last image
     	else {
@@ -394,7 +384,7 @@
     {
     	if($next_image != "") {
 	    	// build the href attribute
-	    	$href =  "\"" . $category . ".php?image=" . $paintings[$next_image]["clean-title"] . "\"";
+	    	$href =  "\"" . $category . ".php?image=" . $next_image . "\"";
     	}
     	// we are at the last image
     	else {
@@ -410,7 +400,7 @@
     {
     	if($prev_image !=  "") {
     		// build the href attribute
-    		$href =  "\"" . $category . ".php?image=" . $paintings[$prev_image]["clean-title"] . "\"";
+    		$href =  "\"" . $category . ".php?image=" . $prev_image . "\"";
     	}
     	// we are at the first image
     	// need to figure out how to wrap around
