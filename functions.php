@@ -319,7 +319,7 @@
 			//$caption .= $code;
 
 			// build buy now button form and add it to the caption
-			$button = "<form action='buy-now.php' method='get'><input type='hidden' name='paintingIndex' value='" . $i . "' /><button type='submit' class='button'>Purchase</button></form>";
+			$button = "<form action='buy-now.php' method='get'><input type='hidden' name='paintingIndex' value='" . $i . "' /><input type='hidden' name='category' value='" . $paintings[$i]["category"] . "' /><button type='submit' class='button'>Purchase</button></form>";
 			$caption .=$button;
 		}
 		if (array_key_exists("print", $paintings[$i])) {

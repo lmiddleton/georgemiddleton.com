@@ -10,8 +10,11 @@ $tpl = new Savant3();
 // get it from the data sent from client
 $paintingIndex = $_GET['paintingIndex'];
 
+// get the category
+$category = $_GET['category'];
+
 // get and store the paintings
-$paintings = get_paintings();
+$paintings = get_paintings($category);
 
 // get the painting's full image filename
 $full_filename = $paintings[$paintingIndex]["full-filename"];
